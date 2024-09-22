@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Components/Sidebar/Sidebar';
+import ContentContainer from './Components/ContentContainer/ContentContainer';
+import LargeFormContent from './Components/LargeFormContent/LargeFormContent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p> This is my portfolio website, it is currently under construction. Please come back at a later date.</p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        <Sidebar/>
+        <div className="All-Content">
+          <LargeFormContent color="black"/>
+          <ContentContainer color="lavender"/>
+          <ContentContainer color="lemonchiffon"/>
+        </div>
       </header>
     </div>
   );
