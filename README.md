@@ -33,3 +33,5 @@ redo color palatte for entire website - theres some need for cohesion & professi
 
 NOTE: Any content lifted from Wikipedia is meant to serve only as placeholders - this is text
 PICTURES - citations of them 
+
+All Icons sourced from https://www.flaticon.com/

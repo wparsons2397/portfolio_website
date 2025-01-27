@@ -1,0 +1,24 @@
+{
+  "steps": [
+    {
+      "title": "Step 1",
+      "content": "Open System Settings",
+      "image": "Icons/systemsettings.png"
+    },
+    {
+      "title": "Step 2",
+      "content": "Scroll in the left sidebar to Accessibility",
+      "image": "Icons/accessibility.png"
+    },
+    {
+      "title": "Step 3",
+      "content": "Click VoiceOver in the Vision Section",
+      "image": "Icons/voiceover.png"
+    },
+    {
+      "title": "Step 4",
+      "content": "Toggle VoiceOver on via the switch",
+      "image": "Icons/toggle.png"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+.InstructionsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 40px; /* Rounded corners */
+    padding: 20px;
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    color: black; /* Set text color to black */
+}
+
+.InstructionsBox-header {
+    width: 100%;
+    height: 20%; /* 20% of the height of the entire InstructionsBox */
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Slightly darker shade of white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InstructionsBox-header h2 {
+    margin: 0; /* No margin */
+}
+
+.InstructionsBox-content {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    font-size: 16px; /* Smaller font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InstructionsBox-image {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.InstructionsBox-image img {
+    max-width: 60px;
+    max-height: 60px;
+    width: 60px; /* Ensure the image is exactly 60px by 60px */
+    height: 60px; /* Ensure the image is exactly 60px by 60px */
+    border-radius: 10px; /* Optional: add some rounding to the image corners */
+}
+
+.InstructionsBox-image img[src*="Icons/accessibility.png"],
+.InstructionsBox-image img[src*="Icons/voiceover.png"],
+.InstructionsBox-image img[src*="Icons/toggle.png"] {
+    max-width: none;
+    max-height: none;
+    width: auto; /* Display the image at its full size */
+    height: auto; /* Display the image at its full size */
+}
+
+.InstructionsBox-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.InstructionsBox-footer span {
+    font-size: 14px;
+}
+
+.Icon {
+    cursor: pointer;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
