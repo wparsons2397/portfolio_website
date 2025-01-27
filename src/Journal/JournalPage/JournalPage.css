@@ -1,0 +1,23 @@
+.JournalPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .JournalContent {
+        background-color: rgb(187, 211, 255);
+    }
+
+    h1 {
+        padding-left: 5%;
+        background-color: rgb(187, 211, 255);
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+    p {
+        padding-left: 5%;
+        padding-bottom: 3%;
+        background-color: rgb(187, 211, 255);
+    }
+
+}

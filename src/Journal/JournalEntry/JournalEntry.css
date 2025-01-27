@@ -1,0 +1,40 @@
+.JournalEntry {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(187, 211, 255);
+
+    padding-bottom: 4%;
+
+    border-top: 3px solid cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+
+    h3 {
+        padding-left: 8%;
+        padding-top: 2%;
+    }
+
+    .JournalEntryContent {
+        display: flex;
+        flex-direction: row;
+
+        .TimelineCircle {
+            display: flex;
+            width: 100px !important;
+            height: 100px !important;
+            background-color: black;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-left: 2%;
+        }
+
+        p {
+            padding-left: 3%;
+            padding-right: 10%;
+            width: 72%;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.AboutMe {
+    z-index: 10;
+    p
+    {
+        font-size: 20px;
+    }
+
+    .DualContent {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 80%;
+    }
+    .PictureColumnContainer {
+        flex-direction: column;
+        padding: 3%;
+        background-color: #E0F7E9;
+        border-radius: 60px;
+
+        .PictureColumn {
+            padding: 2%;
+
+            .RoundedImage {
+                border-radius: 60px;
+            }
+        }
+    }
+    .TextColumn {
+        flex-direction: column;
+        text-align: left;
+        padding: 3%;
+
+        p{
+            padding-top: 2%;
+        }
+    }
+    .SquareHolderL{
+        display: flex;
+        flex-direction: row;
+        padding-left: 7%;
+    }
+    .SquareHolderR{
+        display: flex;
+        flex-direction: row;
+        padding-right: 7%;
+    }
+
+}

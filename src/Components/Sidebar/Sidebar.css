@@ -1,8 +1,0 @@
-.Sidebar {
-    background: #40e8ea;
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-    flex-basis: 20%;
-    z-index: 1;
-}

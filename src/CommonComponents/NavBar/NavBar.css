@@ -1,0 +1,23 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+    background-color: #87CEEB; /* Lighter than current blue, darker than lightblue */
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    button {
+        margin: auto;
+        width: 20%;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        background-color: white;
+        transition: background-color 0.3s ease;
+        font-size: 1.1em; 
+    }
+
+    button:hover {
+        background-color: #e0e0e0; /* Slightly darker color */
+    }
+}

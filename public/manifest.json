@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "Will Parsons Portfolio Website",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -16,6 +16,11 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "Images/Headshot_1.png",
+      "type":"image/png",
+      "sizes": "1000x1000"
     }
   ],
   "start_url": ".",

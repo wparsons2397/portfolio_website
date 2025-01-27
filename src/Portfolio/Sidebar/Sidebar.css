@@ -1,0 +1,50 @@
+.Sidebar {
+    background: #a0a0a0; /* Medium gray */
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    flex-basis: 10%; /* Adjusted width */
+    z-index: 1;
+    position: sticky;
+    top: 2%;
+    height: 750px;
+    border-radius: 60px;
+    overflow: hidden;
+
+    #backToTop{
+        background-color: #a0a0a0; 
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        margin: 5px 0 5px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: calc(10px + 2vmin);
+        border-radius: 50px;
+        transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    }
+    #backToTop:hover{
+        text-decoration: none;
+        color: lightgray;
+        background-color: #e0e0e0; /* Slightly darker color */
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 32px;
+        margin: 5px 0 5px 0;
+        text-align: center;
+        display: inline-block;
+        font-size: calc(10px + 2vmin);
+        transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+        border-radius: 50px;
+        background-color: #a0a0a0; 
+    }
+    a:hover{
+        text-decoration: none;
+        color: lightgray;
+        background-color: #e0e0e0; /* Slightly darker color */
+    }
+}

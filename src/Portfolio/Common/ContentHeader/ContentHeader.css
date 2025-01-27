@@ -1,0 +1,6 @@
+.ContentHeader {
+    flex-direction: column;
+    padding: 3%;
+    background-color: sienna;
+    border-radius: 60px;
+}

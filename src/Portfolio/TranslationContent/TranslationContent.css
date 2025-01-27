@@ -1,0 +1,7 @@
+.TranslationContent {
+    position: relative;
+    flex: 1;
+    padding: 5%;
+    z-index: 0;
+    border-radius: 60px;
+}

@@ -1,0 +1,7 @@
+.LargeFormContent {
+    position: relative;
+    flex: 1;
+    display: flex;
+    padding: 7%;
+    border-radius: 60px;
+}
