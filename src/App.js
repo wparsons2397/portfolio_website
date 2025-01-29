@@ -1,10 +1,11 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import MainPage from './Portfolio/Pages/MainPage';
 import SecondaryPage from './Portfolio/Pages/SecondaryPage';
 import JournalPage from './Journal/JournalPage/JournalPage';
 import CodersLog from './CodersLog/CodersLog';
-import AccessibilityContent from './Portfolio/AccessiblityContent/AccessibilityContent';
+import AccessibilityContent from './Portfolio/AccessibilityContent/AccessibilityContent';
 
 function App() {
   return (

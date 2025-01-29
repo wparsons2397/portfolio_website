@@ -1,6 +1,6 @@
 import React from "react";
 import './AboutMe.css';
-import SimpleSquare from "../Common/SimpleSquare/SimpleSquare";
+import SimpleSquare from "../../CommonComponents/SimpleSquare/SimpleSquare";
 
 function AboutMe() {
     return(

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="23" failures="0" errors="0" time="1.63">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:24" time="0.524" tests="1">
+    <testcase classname=" renders main page" name=" renders main page" time="0.058">
+    </testcase>
+  </testsuite>
+  <testsuite name="TranslationContent" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:24" time="0.244" tests="4">
+    <testcase classname="TranslationContent renders" name="TranslationContent renders" time="0.027">
+    </testcase>
+    <testcase classname="TranslationContent dropdown menu changes the language" name="TranslationContent dropdown menu changes the language" time="0.01">
+    </testcase>
+    <testcase classname="TranslationContent locale is changed upon changing the language via the dropdown" name="TranslationContent locale is changed upon changing the language via the dropdown" time="0.006">
+    </testcase>
+    <testcase classname="TranslationContent changes languages one at a time and confirms the text is correct" name="TranslationContent changes languages one at a time and confirms the text is correct" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="AccessibilityContent" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:25" time="0.154" tests="3">
+    <testcase classname="AccessibilityContent renders AccessibilityContent component" name="AccessibilityContent renders AccessibilityContent component" time="0.027">
+    </testcase>
+    <testcase classname="AccessibilityContent textbox input works correctly" name="AccessibilityContent textbox input works correctly" time="0.007">
+    </testcase>
+    <testcase classname="AccessibilityContent placeholder text is removed when populated" name="AccessibilityContent placeholder text is removed when populated" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="InstructionsBox" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:25" time="0.13" tests="7">
+    <testcase classname="InstructionsBox renders" name="InstructionsBox renders" time="0.009">
+    </testcase>
+    <testcase classname="InstructionsBox displays the correct content for the current step" name="InstructionsBox displays the correct content for the current step" time="0.002">
+    </testcase>
+    <testcase classname="InstructionsBox navigates to the next step" name="InstructionsBox navigates to the next step" time="0.005">
+    </testcase>
+    <testcase classname="InstructionsBox navigates to the previous step" name="InstructionsBox navigates to the previous step" time="0.003">
+    </testcase>
+    <testcase classname="InstructionsBox loops to the first step after the last step" name="InstructionsBox loops to the first step after the last step" time="0.004">
+    </testcase>
+    <testcase classname="InstructionsBox loops to the last step when navigating back from the first step" name="InstructionsBox loops to the last step when navigating back from the first step" time="0.002">
+    </testcase>
+    <testcase classname="InstructionsBox displays the correct image for the current step" name="InstructionsBox displays the correct image for the current step" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Sidebar Component" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:25" time="0.119" tests="4">
+    <testcase classname="Sidebar Component renders" name="Sidebar Component renders" time="0.008">
+    </testcase>
+    <testcase classname="Sidebar Component backToTop function scrolls to top" name="Sidebar Component backToTop function scrolls to top" time="0.003">
+    </testcase>
+    <testcase classname="Sidebar Component links are valid" name="Sidebar Component links are valid" time="0.002">
+    </testcase>
+    <testcase classname="Sidebar Component ensures that maximum height of top property never exceeds 225px" name="Sidebar Component ensures that maximum height of top property never exceeds 225px" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-01-28T15:32:25" time="0.124" tests="4">
+    <testcase classname=" renders" name=" renders" time="0.009">
+    </testcase>
+    <testcase classname=" navigates to Portfolio" name=" navigates to Portfolio" time="0.004">
+    </testcase>
+    <testcase classname=" navigates to journal" name=" navigates to journal" time="0.002">
+    </testcase>
+    <testcase classname=" navigate to Log" name=" navigate to Log" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

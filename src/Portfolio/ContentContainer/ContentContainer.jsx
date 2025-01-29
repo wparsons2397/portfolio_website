@@ -1,8 +1,8 @@
 import React from "react";
 import './ContentContainer.css';
-import logo from './../../logo.svg';
-import AccessibilityContent from "../AccessiblityContent/AccessibilityContent";
+import AccessibilityContent from "../AccessibilityContent/AccessibilityContent";
 import TranslationContent from "../TranslationContent/TranslationContent";
+import TestingContent from "../TestingContent/TestingContent";
 
 function ContentContainer({contentDisplay, color}) {
     return(
@@ -13,10 +13,12 @@ function ContentContainer({contentDisplay, color}) {
             {contentDisplay === 'Translations' &&
                 <TranslationContent color={color}/>
             }
+            {contentDisplay === 'Testing' &&
+                <TestingContent color={color}/>
+            }
             {contentDisplay === 'Other' &&
                 <div>
                     <p>TEST TEST TEST</p>
-                    <img src={logo} className="App-logo" alt="logo" />
                     <p>
                         Edit <code>src/App.js</code> and save to reload.
                     </p>

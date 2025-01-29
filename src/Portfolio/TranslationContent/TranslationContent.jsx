@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './TranslationContent.css';
-import DropdownMenu from "../Common/DropdownMenu/DropdownMenu";
+import DropdownMenu from "../../CommonComponents/DropdownMenu/DropdownMenu";
 import { FormattedMessage } from "react-intl";
 import { IntlManager } from "../../IntlManager";
 
@@ -8,10 +8,13 @@ function TranslationContent({color}) {
 
     const [locale, setLocale] = useState('en-US');
 
-    let TranslationOptions = [
+    // MENTION USE OF ISO-639-1 CODES
+    const TranslationOptions = [
         { value: 'en-US', label: 'English' },
         { value: 'es', label: 'Spanish' },
-        // { value: 'de', label: 'Dutch' },
+        { value: 'nl', label: 'Dutch' },
+        { value: 'uk', label: 'Ukranian' },
+        { value: 'ja', label: 'Japanese' },
     ];
     
     const handleLanguageChange = (value) => {
@@ -27,7 +30,7 @@ function TranslationContent({color}) {
                     <FormattedMessage id="headerText" defaultMessage="Translation Content Section"/>
                 </h1>
                 <p>
-                    <FormattedMessage id="paragraphOne" defaultMessage="In here there will be a bunch of various text" />
+                    <FormattedMessage id="paragraphOne" defaultMessage="In this section there is a bunch of various text." />
                     </p>
                 <p>
                     <FormattedMessage id="paragraphTwo" defaultMessage="All of it will translate when you change the dropdown" />

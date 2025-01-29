@@ -3,9 +3,8 @@ import './ContentHeader.css';
 
 function ContentHeader({text}) {
     return(
-        <div className="ContentHeader" >
+        <div className="ContentHeader">
             <h1>{text}</h1>
-
         </div>
     )
 }

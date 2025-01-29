@@ -28,11 +28,11 @@ function InstructionsBox({ steps = [{ title: "Default Step", content: "This is t
             )}
             <div className="InstructionsBox-footer">
                 <button onClick={() => prevStep()} aria-label="Previous Step" className="icon-button">
-                    <Icon pic="arrow" rotation="left" />
+                    <Icon pic="arrow" rotation="down" isButton="true"/>
                 </button>
                 <span>{currentStep + 1} / {steps.length}</span>
                 <button onClick={() => nextStep()} aria-label="Next Step" className="icon-button">
-                    <Icon pic="arrow" rotation="right" />
+                    <Icon pic="arrow" rotation="up" isButton="true"/>
                 </button>
             </div>
         </div>

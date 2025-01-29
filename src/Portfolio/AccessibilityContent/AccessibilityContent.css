@@ -1,0 +1,132 @@
+.AccessibilityContent {
+    position: relative;
+    flex: 1;
+    padding: 3% 5%;
+    z-index: 0;
+    border-radius: 60px;
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        margin: 0 3%;
+    }
+
+    input {
+        width: 30%;
+        border-radius: 4px;
+        height: 50px;
+        background-color: white;
+        margin-bottom: 3%; /* Same bottom margin as DropdownMenu */
+    }
+
+    input:hover {
+        background-color: rgba(255, 255, 255, 0.45);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .AccessibilityInstructions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-top: -3%;
+
+        p {
+            padding: 2%;
+            flex: 1;
+            margin-right: -70%;
+        }
+
+        .Icon {
+            flex: 1;
+            margin: 0;
+        }
+    }
+
+    .InstructionsBox-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+        margin-bottom: 3%;
+
+        .InstructionsBox-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 10px;
+
+            p {
+                margin-bottom: 5%;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .AccessibilityExampleContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 3%;
+
+        .AccessibilityExample {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+
+            h2 {
+                font-size: 24px;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .DropdownMenu {
+                width: 60%;
+                margin: 4% auto;
+                height: 40px; 
+                border-radius: 8px; 
+            }
+        }
+
+        .VerticalSeparator {
+            width: 2px; /* Match the width of HorizontalSeparator */
+            background-color: #66B2FF; /* Same color as lighterColor */
+            margin: 0 20px;
+            height: auto; /* Make height responsive */
+            align-self: stretch; /* Stretch to match the height of the container */
+        }
+    }
+
+    .Icons-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .DropdownMenu {
+        margin-bottom: 3%;
+    }
+}
+
+.HorizontalSeparator {
+    border: 2px solid; /* Thicker border */
+}

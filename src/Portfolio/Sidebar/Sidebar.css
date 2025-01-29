@@ -6,8 +6,9 @@
     flex-basis: 10%; /* Adjusted width */
     z-index: 1;
     position: sticky;
-    top: 2%;
-    height: 750px;
+    top: 2%; /* Revert to previous top value */
+    transform: translateY(0); /* Remove vertical centering */
+    height: 50vh; /* Responsive height, at most 50% of the browser height */
     border-radius: 60px;
     overflow: hidden;
 

@@ -1,35 +1,24 @@
-## PORTFILIO WEBSITE FOR WILL
+## PORTFOLIO WEBSITE FOR WILL
 
-TODO:
+TODOS:
+---- [ ] V1 Deployment
+- [ ] Create readme to describe purpose
+- [ ] Flesh out Portfolio page
+- [ ] Third item to highlight within the portfolio? 2 doesnt feel like enough.
+- [ ] Fix website color palatte
+- [ ] Ask Isabel for edits for any and all text
+- [ ] Add unit tests
+---- [ ] V2 Deployment
+- [ ] Host this elsewhere than standard Github Pages
+    - [ ] Host with website and GHA?
+- [ ] Get Coder's Log up and running
+---- [ ] V3 Deployment
+- [ ] Start journal section
 
-containers for sections
-side bar
-    link GH Repo
-    link LinkedIn
-    link resume?
-
-2 pages?
-    about me
-    some design/programming flexin
-
-
-MAIN CONTENT
-    about me - a few sections
-        who am i?
-        what do i like?
-        what motivates me?
-        what do i want to do (deep man)
-
-
-each section a different project I've really liked
-1 for accessibility - should be the entire website
-1 for reusability - isnt this entire thing that?
-1 for translations
-
-Background color or image? what should it be?
-redo color palatte for entire website - theres some need for cohesion & professionalism
-    this needs to have people be impressed, not just a long form resume
-
+Sources
+- Any and all icons that are in use on the webpage have been sourced from https://www.flaticon.com/
+- Any content lifted from Wikipedia is meant to serve only as placeholders - this is text
+- PICTURES - citations of them 
 
 NOTE: Any content lifted from Wikipedia is meant to serve only as placeholders - this is text
 PICTURES - citations of them 

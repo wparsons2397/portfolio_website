@@ -1,7 +1,7 @@
 {
-  "headerText": "Translation Content Section",
-  "dropdown": "Dropdown US",
-  "paragraphOne": "In here there will be a bunch of various text",
+  "headerText": "Translation Content",
+  "dropdown": "Dropdown Language",
+  "paragraphOne": "In this section there is a bunch of various text.",
   "paragraphTwo": "All of it will translate when you change the dropdown",
   "paragraphThree": "I believe that the internet is meant for everyone, an important part of that is by striving to make webpage content in as many languages as possible!"
 }
