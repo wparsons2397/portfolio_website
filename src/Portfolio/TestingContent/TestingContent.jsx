@@ -1,8 +1,9 @@
 import React from "react";
 import './TestingContent.css';
 import DisplayTestResults from "./DisplayTestResults";
+import { Colors } from "../../constants/colors";
 
-function TestingContent({ color }) {
+function TestingContent({ color = Colors.PRIMARY }) {
     return (
         <div className="TestingContent" style={{ background: color }}>
             <h1 aria-label="Testing Content Section"> Testing Summary </h1>

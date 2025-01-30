@@ -116,4 +116,22 @@ describe('TranslationContent', () => {
             expect(screen.getByText(translations[locale])).toBeInTheDocument();
         });
     });
+
+    test('renders with default language', () => {
+        renderWithIntl(<TranslationContent color="#FFFFFF" />);
+        expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
+    });
+
+    test('handles invalid language code gracefully', () => {
+        renderWithIntl(<TranslationContent color="#FFFFFF" />);
+        const dropdown = screen.getByRole('combobox');
+        fireEvent.change(dropdown, { target: { value: 'invalid-code' } });
+        expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
+    });
+
+    test('is accessible', () => {
+        renderWithIntl(<TranslationContent color="#FFFFFF" />);
+        expect(screen.getByLabelText('Translation Content Section')).toBeInTheDocument();
+        expect(screen.getByRole('combobox')).toBeInTheDocument();
+    });
 });

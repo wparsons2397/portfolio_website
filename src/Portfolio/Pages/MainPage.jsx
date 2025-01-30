@@ -5,23 +5,26 @@ import LargeFormContent from '../LargeFormContent/LargeFormContent';
 import Spacer from '../../CommonComponents/Spacer/Spacer.jsx';
 import ContentHeader from "../ContentHeader/ContentHeader.jsx";
 import NavBar from "../../CommonComponents/NavBar/NavBar.jsx";
+import { Colors } from "../../constants/colors";
 
 function MainPage() {
+  const spacerHeight = '100px';
+
     return (
       <div className="App">
         <NavBar/>
         <header className="App-header">
           <Sidebar/>
           <div className="All-Content">
-            <LargeFormContent color="#28A745"/>
-            <Spacer spacer="100px" color="lightblue"/>
+            <LargeFormContent color={Colors.PRIMARY}/>
+            <Spacer spacer={spacerHeight} color={Colors.BACKGROUND}/>
             <ContentHeader text="Important Work"/>
-            <Spacer spacer="100px" color="lightblue"/>
-            <ContentContainer contentDisplay='Accessibility' color="#007BFF"/>
-            <Spacer spacer="100px" color="lightblue"/>
-            <ContentContainer contentDisplay='Translations' color="#C5D400"/>
-            <Spacer spacer="100px" color="lightblue"/>
-            <ContentContainer contentDisplay='Testing' color="darkgoldenrod"/>
+            <Spacer spacer={spacerHeight} color={Colors.BACKGROUND}/>
+            <ContentContainer contentDisplay='Accessibility' color={Colors.PRIMARY}/>
+            <Spacer spacer={spacerHeight} color={Colors.BACKGROUND}/>
+            <ContentContainer contentDisplay='Translations' color={Colors.PRIMARY}/>
+            <Spacer spacer={spacerHeight} color={Colors.BACKGROUND}/>
+            <ContentContainer contentDisplay='Testing' color={Colors.PRIMARY}/>
           </div>
         </header>
       </div>

@@ -7,6 +7,7 @@ import MacSteps from "../../CommonComponents/InstructionsBox/InstructionJson/Mac
 import WindowsSteps from "../../CommonComponents/InstructionsBox/InstructionJson/WindowsInstructions.json";
 import VerticalSeparator from "../../CommonComponents/VerticalSeparator/VerticalSeparator";
 import HorizontalSeparator from "../../CommonComponents/HorizontalSeparator/HorizontalSeparator";
+import { Colors } from "../../constants/colors";
 
 function AccessibilityContent({color}) {
     const [textbox, setTextbox] = useState('');
@@ -21,8 +22,6 @@ function AccessibilityContent({color}) {
         { value: 'Tokyo', label: 'Tokyo' },
     ];
 
-    const lighterColor = "#66B2FF"; // Slightly lighter than #007BFF
-
     return(
         <div className="AccessibilityContent" style={{background: color}}>
             <h1 aria-label="Accessibility Content Section">Accessibility Content</h1>
@@ -31,7 +30,7 @@ function AccessibilityContent({color}) {
             <p tabIndex={0}>So have a look at what that looks like, theres some navigation tricks & tools to use to really test this out.</p>
             <div className="InstructionsBox-container">
                 <div className="InstructionsBox-column">
-                    <p tabIndex={0} >For Mac Users:</p>
+                    <p tabIndex={0}>For Mac Users:</p>
                     <InstructionsBox steps={MacSteps.steps}/>
                 </div>
                 <div className="InstructionsBox-column">
@@ -40,7 +39,7 @@ function AccessibilityContent({color}) {
                 </div>
             </div>
             
-            <HorizontalSeparator color={lighterColor} /> 
+            <HorizontalSeparator color={Colors.ACCENTTWO} /> 
             <h1 tabIndex={0}> Acessibility Examples </h1>
             <div className="AccessibilityExampleContainer">
                 <div className="AccessibilityExample">
@@ -55,13 +54,13 @@ function AccessibilityContent({color}) {
                         aria-live="polite"
                     />
                 </div>
-                <VerticalSeparator color={lighterColor} />
+                <VerticalSeparator color={Colors.ACCENTTWO} />
                 <div className="AccessibilityExample">
                     <h2 aria-label="Dropdown example">Dropdowns</h2>
                     <p>This is applied as well for dropdowns, always inform your users</p>
                     <DropdownMenu options={AccessibilityOptions}></DropdownMenu>
                 </div>
-                <VerticalSeparator color={lighterColor} />
+                <VerticalSeparator color={Colors.ACCENTTWO} />
                 <div className="AccessibilityExample">
                     <h2 aria-label="Icons example">Icons</h2>
                     <p>Even page icons deserve to be read out!</p>

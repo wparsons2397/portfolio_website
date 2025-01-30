@@ -1,8 +1,10 @@
+@import '../../constants/colors.css';
+
 .ResultsSummary {
     display: flex;
     flex-direction: column;
     border-radius: 40px;
-    background-color: peru;
+    background-color: var(--accent-two-color);
     padding: 3% 5%;
 }
 

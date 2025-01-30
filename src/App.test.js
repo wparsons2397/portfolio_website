@@ -23,4 +23,37 @@ describe('App', () => {
     const mainPageElement = await screen.findByText(/Will Parsons/i);
     expect(mainPageElement).toBeInTheDocument();
   });
+
+  test('navigates to journal page', async () => {
+    render(
+      <MemoryRouter initialEntries={['/journal']}>
+        <App />
+      </MemoryRouter>
+    );
+
+    const journalPageElement = await screen.findByText(/Journal - Diary of an Expat/i);
+    expect(journalPageElement).toBeInTheDocument();
+  });
+
+  test('navigates to coders log page', async () => {
+    render(
+      <MemoryRouter initialEntries={['/coderslog']}>
+        <App />
+      </MemoryRouter>
+    );
+
+    const codersLogPageElement = await screen.findByText(/Coding Log/i);
+    expect(codersLogPageElement).toBeInTheDocument();
+  });
+
+  // test('renders 404 page for unknown route', async () => {
+  //   render(
+  //     <MemoryRouter initialEntries={['/unknown']}>
+  //       <App />
+  //     </MemoryRouter>
+  //   );
+
+  //   const notFoundPageElement = await screen.findByText(/404 Not Found/i);
+  //   expect(notFoundPageElement).toBeInTheDocument();
+  // });
 });

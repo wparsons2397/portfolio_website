@@ -1,9 +1,12 @@
+@import '../../constants/colors.css';
+
 .TestingContent {
     position: relative;
     flex: 1;
     padding: 3% 5%;
     z-index: 0;
     border-radius: 60px;
+    background-color: var(--primary-color);
 
     h2 {
         font-size: 24px;

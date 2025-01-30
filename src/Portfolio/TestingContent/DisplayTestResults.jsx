@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './DisplayTestResults.css';
 import HorizontalSeparator from '../../CommonComponents/HorizontalSeparator/HorizontalSeparator';
+import { Colors } from '../../constants/colors';
 
 const DisplayTestResults = () => {
     const [testResults, setTestResults] = useState(null);
@@ -31,7 +32,7 @@ const DisplayTestResults = () => {
             {testResults.map((result) => (
                 <div className='ResultsSummary' key={result.name}>
                     <div className='ResultsSectionHeader'> {result.name} Section Summary</div>
-                    <HorizontalSeparator color="#70b3fb"/>
+                    <HorizontalSeparator color={Colors.ACCENTONE}/>
                     <div className='ResultsSectionContent'>
                         <p>Number of tests: {result.tests} </p>
                         <p>Number of tests failing: {result.failures} </p>
