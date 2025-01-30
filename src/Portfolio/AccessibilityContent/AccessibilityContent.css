@@ -103,14 +103,6 @@
                 border-radius: 8px; 
             }
         }
-
-        .VerticalSeparator {
-            width: 2px; /* Match the width of HorizontalSeparator */
-            background-color: #66B2FF; /* Same color as lighterColor */
-            margin: 0 20px;
-            height: auto; /* Make height responsive */
-            align-self: stretch; /* Stretch to match the height of the container */
-        }
     }
 
     .Icons-container {
@@ -125,8 +117,4 @@
     .DropdownMenu {
         margin-bottom: 3%;
     }
-}
-
-.HorizontalSeparator {
-    border: 2px solid; /* Thicker border */
 }

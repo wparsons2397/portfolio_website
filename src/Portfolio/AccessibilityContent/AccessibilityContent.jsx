@@ -5,7 +5,8 @@ import Icon from "../../CommonComponents/Icon/Icon";
 import InstructionsBox from "../../CommonComponents/InstructionsBox/InstructionsBox";
 import MacSteps from "../../CommonComponents/InstructionsBox/InstructionJson/MacInstructions.json";
 import WindowsSteps from "../../CommonComponents/InstructionsBox/InstructionJson/WindowsInstructions.json";
-
+import VerticalSeparator from "../../CommonComponents/VerticalSeparator/VerticalSeparator";
+import HorizontalSeparator from "../../CommonComponents/HorizontalSeparator/HorizontalSeparator";
 
 function AccessibilityContent({color}) {
     const [textbox, setTextbox] = useState('');
@@ -39,7 +40,7 @@ function AccessibilityContent({color}) {
                 </div>
             </div>
             
-            <hr className="HorizontalSeparator" style={{ borderColor: lighterColor }} /> 
+            <HorizontalSeparator color={lighterColor} /> 
             <h1 tabIndex={0}> Acessibility Examples </h1>
             <div className="AccessibilityExampleContainer">
                 <div className="AccessibilityExample">
@@ -54,13 +55,13 @@ function AccessibilityContent({color}) {
                         aria-live="polite"
                     />
                 </div>
-                <div className="VerticalSeparator" style={{ borderColor: lighterColor }}></div>
+                <VerticalSeparator color={lighterColor} />
                 <div className="AccessibilityExample">
                     <h2 aria-label="Dropdown example">Dropdowns</h2>
                     <p>This is applied as well for dropdowns, always inform your users</p>
                     <DropdownMenu options={AccessibilityOptions}></DropdownMenu>
                 </div>
-                <div className="VerticalSeparator" style={{ borderColor: lighterColor }}></div>
+                <VerticalSeparator color={lighterColor} />
                 <div className="AccessibilityExample">
                     <h2 aria-label="Icons example">Icons</h2>
                     <p>Even page icons deserve to be read out!</p>

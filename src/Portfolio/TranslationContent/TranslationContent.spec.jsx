@@ -58,6 +58,45 @@ describe('TranslationContent', () => {
         expect(screen.getByText('En esta sección hay un montón de texto variado.')).toBeInTheDocument();
     });
 
+    test('changes the language to Arabic and confirms the locale and direction', () => {
+        renderWithIntl(<TranslationContent color="#FFFFFF" />);
+        
+        const dropdown = screen.getByRole('combobox');
+        
+        // Simulate changing the language to Arabic
+        fireEvent.change(dropdown, { target: { value: 'ar' } });
+        
+        // Check that the locale is updated
+        expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
+        
+        // Check that the direction is now right to left
+        const translationContentDiv = screen.getByLabelText('Translation Content Section').parentElement;
+        expect(translationContentDiv).toHaveAttribute('dir', 'rtl');
+    });
+
+    test('changes the language to Arabic and then to Dutch, confirming the locale and direction', () => {
+        renderWithIntl(<TranslationContent color="#FFFFFF" />);
+        
+        const dropdown = screen.getByRole('combobox');
+        
+        // Simulate changing the language to Arabic
+        fireEvent.change(dropdown, { target: { value: 'ar' } });
+        
+        // Check that the locale is updated
+        expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
+        
+        const translationContentDiv = screen.getByLabelText('Translation Content Section').parentElement;
+        
+        // Simulate changing the language to Dutch
+        fireEvent.change(dropdown, { target: { value: 'nl' } });
+        
+        // Check that the locale is updated
+        expect(screen.getByText('In deze sectie vindt u een heleboel verschillende teksten.')).toBeInTheDocument();
+        
+        // Check that the direction is now left to right
+        expect(translationContentDiv).toHaveAttribute('dir', 'ltr');
+    });
+
     test('changes languages one at a time and confirms the text is correct', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
         
@@ -68,7 +107,8 @@ describe('TranslationContent', () => {
             'es': 'En esta sección hay un montón de texto variado.',
             'nl': 'In deze sectie vindt u een heleboel verschillende teksten.',
             'uk': 'У цьому розділі є купа різноманітного тексту.',
-            'ja': 'このセクションにはさまざまなテキストがたくさんあります。'
+            'ja': 'このセクションにはさまざまなテキストがたくさんあります。',
+            'ar': 'يوجد في هذا القسم مجموعة من النصوص المتنوعة.'
         };
 
         Object.keys(translations).forEach(locale => {

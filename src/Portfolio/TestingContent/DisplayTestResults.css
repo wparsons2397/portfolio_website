@@ -1,0 +1,19 @@
+.ResultsSummary {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: peru;
+    padding: 3% 5%;
+}
+
+.ResultsSectionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ResultsSectionContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

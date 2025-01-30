@@ -1,1 +1,44 @@
-{"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":6,"numPassedTests":23,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":6,"numTotalTests":23,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1738078343978,"success":true,"testResults":[{"assertionResults":[{"ancestorTitles":[],"failureMessages":[],"fullName":"renders main page","location":null,"status":"passed","title":"renders main page"}],"endTime":1738078344798,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/App.test.js","startTime":1738078344274,"status":"passed","summary":""},{"assertionResults":[{"ancestorTitles":["TranslationContent"],"failureMessages":[],"fullName":"TranslationContent renders","location":null,"status":"passed","title":"renders"},{"ancestorTitles":["TranslationContent"],"failureMessages":[],"fullName":"TranslationContent dropdown menu changes the language","location":null,"status":"passed","title":"dropdown menu changes the language"},{"ancestorTitles":["TranslationContent"],"failureMessages":[],"fullName":"TranslationContent locale is changed upon changing the language via the dropdown","location":null,"status":"passed","title":"locale is changed upon changing the language via the dropdown"},{"ancestorTitles":["TranslationContent"],"failureMessages":[],"fullName":"TranslationContent changes languages one at a time and confirms the text is correct","location":null,"status":"passed","title":"changes languages one at a time and confirms the text is correct"}],"endTime":1738078345054,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/Portfolio/TranslationContent/TranslationContent.spec.jsx","startTime":1738078344810,"status":"passed","summary":""},{"assertionResults":[{"ancestorTitles":["AccessibilityContent"],"failureMessages":[],"fullName":"AccessibilityContent renders AccessibilityContent component","location":null,"status":"passed","title":"renders AccessibilityContent component"},{"ancestorTitles":["AccessibilityContent"],"failureMessages":[],"fullName":"AccessibilityContent textbox input works correctly","location":null,"status":"passed","title":"textbox input works correctly"},{"ancestorTitles":["AccessibilityContent"],"failureMessages":[],"fullName":"AccessibilityContent placeholder text is removed when populated","location":null,"status":"passed","title":"placeholder text is removed when populated"}],"endTime":1738078345214,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/Portfolio/AccessibilityContent/AccessibilityContent.spec.jsx","startTime":1738078345060,"status":"passed","summary":""},{"assertionResults":[{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox renders","location":null,"status":"passed","title":"renders"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox displays the correct content for the current step","location":null,"status":"passed","title":"displays the correct content for the current step"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox navigates to the next step","location":null,"status":"passed","title":"navigates to the next step"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox navigates to the previous step","location":null,"status":"passed","title":"navigates to the previous step"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox loops to the first step after the last step","location":null,"status":"passed","title":"loops to the first step after the last step"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox loops to the last step when navigating back from the first step","location":null,"status":"passed","title":"loops to the last step when navigating back from the first step"},{"ancestorTitles":["InstructionsBox"],"failureMessages":[],"fullName":"InstructionsBox displays the correct image for the current step","location":null,"status":"passed","title":"displays the correct image for the current step"}],"endTime":1738078345349,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx","startTime":1738078345219,"status":"passed","summary":""},{"assertionResults":[{"ancestorTitles":["Sidebar Component"],"failureMessages":[],"fullName":"Sidebar Component renders","location":null,"status":"passed","title":"renders"},{"ancestorTitles":["Sidebar Component"],"failureMessages":[],"fullName":"Sidebar Component backToTop function scrolls to top","location":null,"status":"passed","title":"backToTop function scrolls to top"},{"ancestorTitles":["Sidebar Component"],"failureMessages":[],"fullName":"Sidebar Component links are valid","location":null,"status":"passed","title":"links are valid"},{"ancestorTitles":["Sidebar Component"],"failureMessages":[],"fullName":"Sidebar Component ensures that maximum height of top property never exceeds 225px","location":null,"status":"passed","title":"ensures that maximum height of top property never exceeds 225px"}],"endTime":1738078345474,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/Portfolio/Sidebar/Sidebar.spec.jsx","startTime":1738078345355,"status":"passed","summary":""},{"assertionResults":[{"ancestorTitles":[],"failureMessages":[],"fullName":"renders","location":null,"status":"passed","title":"renders"},{"ancestorTitles":[],"failureMessages":[],"fullName":"navigates to Portfolio","location":null,"status":"passed","title":"navigates to Portfolio"},{"ancestorTitles":[],"failureMessages":[],"fullName":"navigates to journal","location":null,"status":"passed","title":"navigates to journal"},{"ancestorTitles":[],"failureMessages":[],"fullName":"navigate to Log","location":null,"status":"passed","title":"navigate to Log"}],"endTime":1738078345606,"message":"","name":"/Users/williamparsons/Desktop/Code/portfolio_website/src/CommonComponents/NavBar/NavBar.spec.jsx","startTime":1738078345482,"status":"passed","summary":""}],"wasInterrupted":false}
+[
+  {
+    "name": "App",
+    "tests": 1,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  {
+    "name": "Translation Content",
+    "tests": 4,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  {
+    "name": "Accessibility Content",
+    "tests": 3,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  {
+    "name": "Instructions Box",
+    "tests": 7,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  {
+    "name": "Sidebar",
+    "tests": 4,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  {
+    "name": "Nav Bar",
+    "tests": 4,
+    "failures": 0,
+    "skipped": 0,
+    "errors": 0
+  }
+]

@@ -15,6 +15,7 @@ function TranslationContent({color}) {
         { value: 'nl', label: 'Dutch' },
         { value: 'uk', label: 'Ukranian' },
         { value: 'ja', label: 'Japanese' },
+        { value: 'ar', label: 'Arabic' },
     ];
     
     const handleLanguageChange = (value) => {
@@ -23,15 +24,19 @@ function TranslationContent({color}) {
         }
     }
 
+    const getDirection = (locale) => {
+        return locale === 'ar' ? 'rtl' : 'ltr';
+    }
+
     return(
         <IntlManager locale={locale}>
-            <div className="TranslationContent" style={{background: color}}>
+            <div className="TranslationContent" style={{background: color}} dir={getDirection(locale)}>
                 <h1 aria-label="Translation Content Section">
                     <FormattedMessage id="headerText" defaultMessage="Translation Content Section"/>
                 </h1>
                 <p>
                     <FormattedMessage id="paragraphOne" defaultMessage="In this section there is a bunch of various text." />
-                    </p>
+                </p>
                 <p>
                     <FormattedMessage id="paragraphTwo" defaultMessage="All of it will translate when you change the dropdown" />
                 </p>

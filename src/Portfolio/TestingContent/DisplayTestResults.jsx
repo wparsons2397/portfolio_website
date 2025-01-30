@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import './DisplayTestResults.css';
+import HorizontalSeparator from '../../CommonComponents/HorizontalSeparator/HorizontalSeparator';
 
 const DisplayTestResults = () => {
     const [testResults, setTestResults] = useState(null);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('/test-results.json') // Update the path to point to the public directory
+        fetch('/test-results.json') // Update the path to point to the JSON file
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -26,8 +28,18 @@ const DisplayTestResults = () => {
 
     return (
         <div>
-            <h1>Test Results</h1>
-            <pre>{JSON.stringify(testResults, null, 2)}</pre>
+            {testResults.map((result) => (
+                <div className='ResultsSummary' key={result.name}>
+                    <div className='ResultsSectionHeader'> {result.name} Section Summary</div>
+                    <HorizontalSeparator color="#70b3fb"/>
+                    <div className='ResultsSectionContent'>
+                        <p>Number of tests: {result.tests} </p>
+                        <p>Number of tests failing: {result.failures} </p>
+                        <p>Tests Skipped: {result.skipped} </p>
+                        <p>Errors: {result.errors} </p>
+                    </div>
+                </div>
+            ))}
         </div>
     );
 };

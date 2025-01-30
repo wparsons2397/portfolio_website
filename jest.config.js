@@ -10,8 +10,19 @@ module.exports = {
     reporters: [
         "default",
         ["jest-junit", {
-            "outputDirectory": ".",
-            "outputName": "test-results.xml"
+            "outputDirectory": "./public",
+            "outputName": "test-results.xml",
+            "classNameTemplate": "{classname}",
+            "titleTemplate": "{title}",
+            "ancestorSeparator": " › ",
+            "suiteNameTemplate": "{filepath}",
+            "includeConsoleOutput": "true",
+            "includeShortConsoleOutput": "true",
+            "addFileAttribute": "true",
+            "usePathForSuiteName": "true",
+            "uniqueOutputName": "false",
+            "includeTestSuiteFailure": "true",
+            "includeTestSuiteSuccess": "true" // Add this line to include the number of test successes
         }]
     ]
 };

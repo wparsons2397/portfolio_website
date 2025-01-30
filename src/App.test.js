@@ -10,15 +10,17 @@ beforeEach(() => {
   fetchMock.resetMocks();
 });
 
-test('renders main page', async () => {
-  fetchMock.mockResponseOnce(JSON.stringify({ message: 'success' }));
+describe('App', () => {
+  test('renders main page', async () => {
+    fetchMock.mockResponseOnce(JSON.stringify({ message: 'success' }));
 
-  render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>
-  );
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
 
-  const mainPageElement = await screen.findByText(/Will Parsons/i);
-  expect(mainPageElement).toBeInTheDocument();
+    const mainPageElement = await screen.findByText(/Will Parsons/i);
+    expect(mainPageElement).toBeInTheDocument();
+  });
 });

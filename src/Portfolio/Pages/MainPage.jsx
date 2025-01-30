@@ -21,7 +21,7 @@ function MainPage() {
             <Spacer spacer="100px" color="lightblue"/>
             <ContentContainer contentDisplay='Translations' color="#C5D400"/>
             <Spacer spacer="100px" color="lightblue"/>
-            <ContentContainer contentDisplay='Testing' color="#020103"/>
+            <ContentContainer contentDisplay='Testing' color="darkgoldenrod"/>
           </div>
         </header>
       </div>
