@@ -7,8 +7,8 @@ function CodersLog() {
       <div className="CodersLog">
         <NavBar/>
         <h1>Coding Log</h1>
-        <h1>This is just a fun little page to show off routing, nothing more to it right now</h1>
-        <h2>Now showing</h2>
+        <h1>This page is a WIP and coming in a later version of my website!</h1>
+        <h2>Stay tuned for more!</h2>
       </div>
     );
   }

@@ -5,7 +5,7 @@ TODOS:
 - [ ] Create readme to describe purpose
 - [ ] Flesh out Portfolio page
 - [X] Third item to highlight within the portfolio? 2 doesnt feel like enough.
-- [ ] Fix website color palatte
+- [X] Fix website color palatte
 - [ ] Ask Isabel for edits for any and all text
 - [X] Add unit tests
 ---- [ ] V2 Deployment

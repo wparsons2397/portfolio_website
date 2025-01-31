@@ -6,3 +6,26 @@
     border-radius: 60px;
     text-align: initial; /* Override inherited text-align */
 }
+
+.HeaderSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ContentSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.LeftColumn, .RightColumn {
+    flex: 1;
+    padding: 10px;
+}
+
+.LeftColumn p, .RightColumn p {
+    margin-bottom: 10px;
+}

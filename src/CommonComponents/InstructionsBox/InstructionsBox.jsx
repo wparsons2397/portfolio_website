@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './InstructionsBox.css';
 import Icon from "../Icon/Icon";
-import { Colors } from "../../constants/colors";
 
 function InstructionsBox({ steps = [{ title: "Default Step", content: "This is the default step content.", image: null }] }) {
     const [currentStep, setCurrentStep] = useState(0);
