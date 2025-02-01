@@ -1,11 +1,11 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
-import messagesEN from './Portfolio/AccessibilityContent/lang/en.json';
-import messagesES from './Portfolio/AccessibilityContent/lang/es.json';
-import messagesNL from './Portfolio/AccessibilityContent/lang/nl.json';
-import messagesUK from './Portfolio/AccessibilityContent/lang/uk.json';
-import messagesJA from './Portfolio/AccessibilityContent/lang/ja.json';
-import messagesAR from './Portfolio/AccessibilityContent/lang/ar.json';
+import messagesEN from '../Portfolio/AccessibilityContent/lang/en.json';
+import messagesES from '../Portfolio/AccessibilityContent/lang/es.json';
+import messagesNL from '../Portfolio/AccessibilityContent/lang/nl.json';
+import messagesUK from '../Portfolio/AccessibilityContent/lang/uk.json';
+import messagesJA from '../Portfolio/AccessibilityContent/lang/ja.json';
+import messagesAR from '../Portfolio/AccessibilityContent/lang/ar.json';
 
 const messages = {
   "en": messagesEN,

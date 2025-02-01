@@ -6,26 +6,26 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--hover-color);
-    border-radius: 40px; /* Rounded corners */
+    border-radius: 40px;
     padding: 20px;
     background-color: var(--white-color);
     width: 300px;
     height: 200px;
-    color: var(--text-on-light-color); /* Set text color */
+    color: var(--text-on-light-color);
 }
 
 .InstructionsBox-header {
     width: 100%;
-    height: 20%; /* 20% of the height of the entire InstructionsBox */
+    height: 20%;
     text-align: center;
-    border-bottom: 1px solid var(--hover-color); /* Slightly darker shade */
+    border-bottom: 1px solid var(--hover-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .InstructionsBox-header h2 {
-    margin: 0; /* No margin */
+    margin: 0;
 }
 
 .InstructionsBox-content {
@@ -33,7 +33,7 @@
     width: 100%;
     text-align: center;
     margin: 10px 0 5px 0;
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,9 +48,9 @@
 .InstructionsBox-image img {
     max-width: 60px;
     max-height: 60px;
-    width: 60px; /* Ensure the image is exactly 60px by 60px */
-    height: 60px; /* Ensure the image is exactly 60px by 60px */
-    border-radius: 10px; /* Optional: add some rounding to the image corners */
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
 }
 
 .InstructionsBox-image img[src*="Icons/accessibility.png"],
@@ -58,8 +58,8 @@
 .InstructionsBox-image img[src*="Icons/toggle.png"] {
     max-width: none;
     max-height: none;
-    width: auto; /* Display the image at its full size */
-    height: auto; /* Display the image at its full size */
+    width: auto;
+    height: auto;
 }
 
 .InstructionsBox-footer {
@@ -71,10 +71,6 @@
 
 .InstructionsBox-footer span {
     font-size: 14px;
-}
-
-.Icon {
-    cursor: pointer;
 }
 
 .icon-button {

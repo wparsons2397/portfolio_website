@@ -1,6 +1,6 @@
 .VerticalSeparator {
-    width: 2px; 
+    width: 2px;
     margin: 0 20px;
-    height: auto; /* Make height responsive */
-    align-self: stretch; /* Stretch to match the height of the container */
+    height: auto;
+    align-self: stretch;
 }

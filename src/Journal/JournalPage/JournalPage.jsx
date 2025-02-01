@@ -9,27 +9,27 @@ function JournalPage() {
   const backToTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
+  }
 
 
-    return (
-      <div className="JournalPage">
-        <NavBar/>
-        <div className="JournalContent">
+  return (
+    <div className="JournalPage">
+      <NavBar />
+      <div className="JournalContent">
         <h1>Journal - Diary of an Expat</h1>
         <h1>This page is a WIP and coming in a later version of my website!</h1>
         <h2>Stay tuned for more!</h2>
-        
+
         <p>One of the things that I want to hold myself accountable on is keeping track of my experiences so far here abroad, so might as well make my portfolio website doble as a means to do so</p>
-        <JournalEntry title="Lorem Ipsum" date="January 1st, 2025" content="test"/>
-        <Spacer spacer="10px" color="lightgrey"/>
-        <JournalEntry title="Lorem Ipsum" date="January 1st, 2025" content="test"/>
-        <Spacer spacer="10px" color="lightgrey"/>
-        <JournalEntry/>
-        </div>
-        <button onClick={backToTop}> Back to Top </button>
+        <JournalEntry title="Lorem Ipsum" date="January 1st, 2025" content="test" />
+        <Spacer spacer="10px" color="lightgrey" />
+        <JournalEntry title="Lorem Ipsum" date="January 1st, 2025" content="test" />
+        <Spacer spacer="10px" color="lightgrey" />
+        <JournalEntry />
       </div>
-    );
-  }
+      <button onClick={backToTop}> Back to Top </button>
+    </div>
+  );
+}
 
 export default JournalPage;

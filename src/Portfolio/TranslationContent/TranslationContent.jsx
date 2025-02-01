@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import './TranslationContent.css';
 import DropdownMenu from "../../CommonComponents/DropdownMenu/DropdownMenu";
 import { FormattedMessage } from "react-intl";
-import { IntlManager } from "../../IntlManager";
+import { IntlManager } from "../../IntlManager/IntlManager";
 import VerticalSeparator from "../../CommonComponents/VerticalSeparator/VerticalSeparator";
 import { Colors } from "../../constants/colors";
 
-function TranslationContent({color}) {
+function TranslationContent({ color }) {
 
     const [locale, setLocale] = useState('en');
 
@@ -19,10 +19,10 @@ function TranslationContent({color}) {
         { value: 'ja', label: 'Japanese' },
         { value: 'ar', label: 'Arabic' },
     ];
-    
+
     const handleLanguageChange = (value) => {
-        if(value !== undefined) {
-           setLocale(value);
+        if (value !== undefined) {
+            setLocale(value);
         }
     }
 
@@ -30,12 +30,12 @@ function TranslationContent({color}) {
         return locale === 'ar' ? 'rtl' : 'ltr';
     }
 
-    return(
+    return (
         <IntlManager locale={locale}>
-            <div className="TranslationContent" style={{background: color}}>
+            <div className="TranslationContent" style={{ background: color }}>
                 <div className="HeaderSection">
                     <h1 aria-label="Translation Content Section">
-                        <FormattedMessage id="headerText" defaultMessage="Translation Content Section"/>
+                        <FormattedMessage id="headerText" defaultMessage="Translation Content Section" />
                     </h1>
                     <DropdownMenu options={TranslationOptions} languageChange={handleLanguageChange}></DropdownMenu>
                 </div>

@@ -26,22 +26,22 @@ function Sidebar() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const navBarHeight = 60; // Adjust this value to match the height of your NavBar
+    const navBarHeight = 60;
     const maxTopPosition = 225; // Maximum top position
 
     const spacerHeight = '50px';
 
-    return(
+    return (
         <div className="Sidebar" style={{ top: `${Math.min(navBarHeight + scrollY / 2, maxTopPosition)}px` }}>
-            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE}/>
+            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <a id="L1" href="https://www.linkedin.com/in/william-parsons-23ct/">LinkedIn</a>
-            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE}/>
+            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <a id="L2" href="https://www.linkedin.com/in/william-parsons-23ct/">Resume Link WIP </a>
-            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE}/>
+            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <a id="L3" href="https://github.com/wparsons2397/portfolio_website">GitHub</a>
-            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE}/>
+            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <button onClick={backToTop} id="backToTop">Back to the top</button>
-            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE}/>
+            <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
         </div>
     );
 }

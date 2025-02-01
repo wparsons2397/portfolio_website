@@ -1,61 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="23" failures="0" errors="0" time="1.636">
-  <testsuite name="src/App.test.js" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:50" time="0.578" tests="1">
-    <testcase classname="App" name="renders main page" time="0.071" file="src/App.test.js">
-    </testcase>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+  <testsuite name="DisplayTestResults" tests="6" time="0.354">
+    <testcase classname="DisplayTestResults" name="renders all basic components" status="failed"/>
+    <testcase classname="DisplayTestResults" name="toggles section visibility" status="passed"/>
+    <testcase classname="DisplayTestResults" name="displays error message on fetch error" status="passed"/>
+    <testcase classname="DisplayTestResults" name="displays loading message when no test results" status="passed"/>
+    <testcase classname="DisplayTestResults" name="calculates total tests and pass percentage correctly" status="passed"/>
+    <testcase classname="DisplayTestResults" name="renders multiple sections correctly" status="passed"/>
   </testsuite>
-  <testsuite name="src/Portfolio/TranslationContent/TranslationContent.spec.jsx" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:51" time="0.183" tests="4">
-    <testcase classname="TranslationContent" name="renders" time="0.026" file="src/Portfolio/TranslationContent/TranslationContent.spec.jsx">
-    </testcase>
-    <testcase classname="TranslationContent" name="dropdown menu changes the language" time="0.011" file="src/Portfolio/TranslationContent/TranslationContent.spec.jsx">
-    </testcase>
-    <testcase classname="TranslationContent" name="locale is changed upon changing the language via the dropdown" time="0.008" file="src/Portfolio/TranslationContent/TranslationContent.spec.jsx">
-    </testcase>
-    <testcase classname="TranslationContent" name="changes languages one at a time and confirms the text is correct" time="0.009" file="src/Portfolio/TranslationContent/TranslationContent.spec.jsx">
-    </testcase>
+  <testsuite name="TranslationContent" tests="9" time="0.221">
+    <testcase classname="TranslationContent" name="renders" status="passed"/>
+    <testcase classname="TranslationContent" name="dropdown menu changes the language" status="passed"/>
+    <testcase classname="TranslationContent" name="locale is changed upon changing the language via the dropdown" status="passed"/>
+    <testcase classname="TranslationContent" name="changes the language to Arabic and confirms the locale and direction" status="passed"/>
+    <testcase classname="TranslationContent" name="changes the language to Arabic and then to Dutch, confirming the locale and direction" status="passed"/>
+    <testcase classname="TranslationContent" name="changes languages one at a time and confirms the text is correct" status="passed"/>
+    <testcase classname="TranslationContent" name="renders with default language" status="passed"/>
+    <testcase classname="TranslationContent" name="handles invalid language code gracefully" status="passed"/>
+    <testcase classname="TranslationContent" name="is accessible" status="passed"/>
   </testsuite>
-  <testsuite name="src/Portfolio/AccessibilityContent/AccessibilityContent.spec.jsx" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:51" time="0.14" tests="3">
-    <testcase classname="AccessibilityContent" name="renders AccessibilityContent component" time="0.026" file="src/Portfolio/AccessibilityContent/AccessibilityContent.spec.jsx">
-    </testcase>
-    <testcase classname="AccessibilityContent" name="textbox input works correctly" time="0.009" file="src/Portfolio/AccessibilityContent/AccessibilityContent.spec.jsx">
-    </testcase>
-    <testcase classname="AccessibilityContent" name="placeholder text is removed when populated" time="0.005" file="src/Portfolio/AccessibilityContent/AccessibilityContent.spec.jsx">
-    </testcase>
+  <testsuite name="App" tests="3" time="0.194">
+    <testcase classname="App" name="renders main page" status="passed"/>
+    <testcase classname="App" name="navigates to journal page" status="passed"/>
+    <testcase classname="App" name="navigates to coders log page" status="passed"/>
   </testsuite>
-  <testsuite name="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:51" time="0.139" tests="7">
-    <testcase classname="InstructionsBox" name="renders" time="0.009" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="displays the correct content for the current step" time="0.002" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="navigates to the next step" time="0.004" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="navigates to the previous step" time="0.004" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="loops to the first step after the last step" time="0.004" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="loops to the last step when navigating back from the first step" time="0.002" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
-    <testcase classname="InstructionsBox" name="displays the correct image for the current step" time="0.002" file="src/CommonComponents/InstructionsBox/InstructionsBox.spec.jsx">
-    </testcase>
+  <testsuite name="AccessibilityContent" tests="7" time="0.15">
+    <testcase classname="AccessibilityContent" name="renders AccessibilityContent component" status="passed"/>
+    <testcase classname="AccessibilityContent" name="textbox input works correctly" status="passed"/>
+    <testcase classname="AccessibilityContent" name="placeholder text is removed when populated" status="passed"/>
+    <testcase classname="AccessibilityContent" name="dropdown menu selection works correctly" status="passed"/>
+    <testcase classname="AccessibilityContent" name="icons have appropriate alt text" status="passed"/>
+    <testcase classname="AccessibilityContent" name="links are accessible and have correct href attributes" status="passed"/>
+    <testcase classname="AccessibilityContent" name="InstructionsBox components render correct steps" status="passed"/>
   </testsuite>
-  <testsuite name="src/Portfolio/Sidebar/Sidebar.spec.jsx" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:52" time="0.117" tests="4">
-    <testcase classname="Sidebar Component" name="renders" time="0.009" file="src/Portfolio/Sidebar/Sidebar.spec.jsx">
-    </testcase>
-    <testcase classname="Sidebar Component" name="backToTop function scrolls to top" time="0.003" file="src/Portfolio/Sidebar/Sidebar.spec.jsx">
-    </testcase>
-    <testcase classname="Sidebar Component" name="links are valid" time="0.002" file="src/Portfolio/Sidebar/Sidebar.spec.jsx">
-    </testcase>
-    <testcase classname="Sidebar Component" name="ensures that maximum height of top property never exceeds 225px" time="0.003" file="src/Portfolio/Sidebar/Sidebar.spec.jsx">
-    </testcase>
+  <testsuite name="NavBar" tests="4" time="0.111">
+    <testcase classname="NavBar" name="renders" status="passed"/>
+    <testcase classname="NavBar" name="navigates to Portfolio" status="passed"/>
+    <testcase classname="NavBar" name="navigates to journal" status="passed"/>
+    <testcase classname="NavBar" name="navigate to Log" status="passed"/>
   </testsuite>
-  <testsuite name="src/CommonComponents/NavBar/NavBar.spec.jsx" errors="0" failures="0" skipped="0" timestamp="2025-01-29T11:20:52" time="0.125" tests="4">
-    <testcase classname="NavBar" name="renders" time="0.01" file="src/CommonComponents/NavBar/NavBar.spec.jsx">
-    </testcase>
-    <testcase classname="NavBar" name="navigates to Portfolio" time="0.004" file="src/CommonComponents/NavBar/NavBar.spec.jsx">
-    </testcase>
-    <testcase classname="NavBar" name="navigates to journal" time="0.002" file="src/CommonComponents/NavBar/NavBar.spec.jsx">
-    </testcase>
-    <testcase classname="NavBar" name="navigate to Log" time="0.002" file="src/CommonComponents/NavBar/NavBar.spec.jsx">
-    </testcase>
+  <testsuite name="InstructionsBox" tests="7" time="0.118">
+    <testcase classname="InstructionsBox" name="renders" status="passed"/>
+    <testcase classname="InstructionsBox" name="displays the correct content for the current step" status="passed"/>
+    <testcase classname="InstructionsBox" name="navigates to the next step" status="passed"/>
+    <testcase classname="InstructionsBox" name="navigates to the previous step" status="passed"/>
+    <testcase classname="InstructionsBox" name="loops to the first step after the last step" status="passed"/>
+    <testcase classname="InstructionsBox" name="loops to the last step when navigating back from the first step" status="passed"/>
+    <testcase classname="InstructionsBox" name="displays the correct image for the current step" status="passed"/>
+  </testsuite>
+  <testsuite name="Sidebar" tests="4" time="0.109">
+    <testcase classname="Sidebar Component" name="renders" status="passed"/>
+    <testcase classname="Sidebar Component" name="backToTop function scrolls to top" status="passed"/>
+    <testcase classname="Sidebar Component" name="links are valid" status="passed"/>
+    <testcase classname="Sidebar Component" name="ensures that maximum height of top property never exceeds 225px" status="passed"/>
+  </testsuite>
+  <testsuite name="IntlManager" tests="3" time="0.112">
+    <testcase classname="IntlManager" name="renders children with default locale" status="passed"/>
+    <testcase classname="IntlManager" name="renders children with specified locale" status="passed"/>
+    <testcase classname="IntlManager" name="falls back to default locale for unsupported locale" status="passed"/>
+  </testsuite>
+  <testsuite name="ButtonToggle" tests="3" time="0.103">
+    <testcase classname="ButtonToggle" name="renders with &quot;Show More&quot; when isExpanded is false" status="passed"/>
+    <testcase classname="ButtonToggle" name="renders with &quot;Show Less&quot; when isExpanded is true" status="passed"/>
+    <testcase classname="ButtonToggle" name="calls onClick when button is clicked" status="passed"/>
+  </testsuite>
+  <testsuite name="DropdownMenu" tests="3" time="0.123">
+    <testcase classname="DropdownMenu" name="renders" status="passed"/>
+    <testcase classname="DropdownMenu" name="displays the correct options" status="passed"/>
+    <testcase classname="DropdownMenu" name="calls languageChange with the correct value when an option is selected" status="passed"/>
   </testsuite>
 </testsuites>

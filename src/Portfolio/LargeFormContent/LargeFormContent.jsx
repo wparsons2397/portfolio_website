@@ -2,11 +2,11 @@ import React from "react";
 import './LargeFormContent.css';
 import AboutMe from "../AboutMe/AboutMe";
 
-function LargeFormContent({color}) {
+function LargeFormContent({ color }) {
 
-    return(
-        <div className="LargeFormContent" style={{background: color}}>
-            <AboutMe/>
+    return (
+        <div className="LargeFormContent" style={{ background: color }}>
+            <AboutMe />
         </div>
     )
 }

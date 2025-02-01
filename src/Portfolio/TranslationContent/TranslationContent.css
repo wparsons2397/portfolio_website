@@ -21,11 +21,13 @@
     justify-content: space-between;
 }
 
-.LeftColumn, .RightColumn {
+.LeftColumn,
+.RightColumn {
     flex: 1;
     padding: 10px;
 }
 
-.LeftColumn p, .RightColumn p {
+.LeftColumn p,
+.RightColumn p {
     margin-bottom: 10px;
 }

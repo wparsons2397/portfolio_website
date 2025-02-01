@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import TranslationContent from './TranslationContent';
-import { IntlManager } from '../../IntlManager';
-import '@testing-library/jest-dom/extend-expect'; // Import this to use toBeInTheDocument
+import { IntlManager } from '../../IntlManager/IntlManager';
+import '@testing-library/jest-dom/extend-expect';
 
 const renderWithIntl = (component, locale = 'en') => {
     return render(
@@ -24,28 +24,28 @@ describe('TranslationContent', () => {
             originalError.call(console, ...args);
         };
     });
-    
+
     afterAll(() => {
         console.error = originalError;
     });
 
     test('renders', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         // Check for main headings
         expect(screen.getByLabelText('Translation Content Section')).toBeInTheDocument();
-        
+
         // Check for paragraphs in the left column
         expect(screen.getByText('So many websites are design by English speakers for English speakers')).toBeInTheDocument();
         expect(screen.getByText('But the work to add translatable content is rather straightforward.')).toBeInTheDocument();
         expect(screen.getByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')).toBeInTheDocument();
         expect(screen.getByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')).toBeInTheDocument();
-        
+
         // Check for paragraphs in the right column
         expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
         expect(screen.getByText('All of it will translate when you change the dropdown')).toBeInTheDocument();
         expect(screen.getByText('I believe that the internet is meant for everyone, an important part of that is by striving to make webpage content in as many languages as possible!')).toBeInTheDocument();
-        
+
         // Check for DropdownMenu component
         const dropdown = screen.getByRole('combobox');
         expect(dropdown).toBeInTheDocument();
@@ -54,43 +54,43 @@ describe('TranslationContent', () => {
 
     test('dropdown menu changes the language', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         const dropdown = screen.getByRole('combobox');
-        
+
         // Check initial state
         expect(dropdown).toBeInTheDocument();
         expect(dropdown.value).toBe('en');
-        
+
         // Simulate changing the language to Spanish
         fireEvent.change(dropdown, { target: { value: 'es' } });
-        
+
         // Check updated state
         expect(dropdown.value).toBe('es');
     });
 
     test('locale is changed upon changing the language via the dropdown', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         const dropdown = screen.getByRole('combobox');
-        
+
         // Simulate changing the language to Spanish
         fireEvent.change(dropdown, { target: { value: 'es' } });
-        
+
         // Check that the locale is updated
         expect(screen.getByText('En esta sección hay un montón de texto variado.')).toBeInTheDocument();
     });
 
     test('changes the language to Arabic and confirms the locale and direction', () => {
         const { container } = renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         const dropdown = screen.getByRole('combobox');
-        
+
         // Simulate changing the language to Arabic
         fireEvent.change(dropdown, { target: { value: 'ar' } });
-        
+
         // Check that the locale is updated
         expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
-        
+
         // Find the element with the class 'RightColumn'
         const translationContentDiv = container.querySelector('.RightColumn');
         expect(translationContentDiv).toHaveAttribute('dir', 'rtl');
@@ -98,33 +98,33 @@ describe('TranslationContent', () => {
 
     test('changes the language to Arabic and then to Dutch, confirming the locale and direction', () => {
         const { container } = renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         const dropdown = screen.getByRole('combobox');
-        
+
         // Simulate changing the language to Arabic
         fireEvent.change(dropdown, { target: { value: 'ar' } });
-        
+
         // Check that the locale is updated
         expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
-        
+
         // Find the element with the class 'RightColumn'
         const translationContentDiv = container.querySelector('.RightColumn');
-        
+
         // Simulate changing the language to Dutch
         fireEvent.change(dropdown, { target: { value: 'nl' } });
-        
+
         // Check that the locale is updated
         expect(screen.getByText('In deze sectie vindt u een heleboel verschillende teksten.')).toBeInTheDocument();
-        
+
         // Check that the direction is now left to right
         expect(translationContentDiv).toHaveAttribute('dir', 'ltr');
     });
 
     test('changes languages one at a time and confirms the text is correct', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        
+
         const dropdown = screen.getByRole('combobox');
-        
+
         const translations = {
             'en': 'In this section there is a bunch of various text.',
             'es': 'En esta sección hay un montón de texto variado.',

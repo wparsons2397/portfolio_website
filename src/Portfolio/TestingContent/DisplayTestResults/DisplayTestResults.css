@@ -1,4 +1,4 @@
-@import '../../constants/colors.css';
+@import '../../../constants/colors.css';
 
 .ResultsSummary {
     display: flex;
@@ -10,12 +10,24 @@
 
 .ResultsSectionHeader {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ResultsSectionHeader span {
+    margin-left: auto;
+    margin-right: 10%;
 }
 
 .ResultsSectionContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.TestSummaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 0 10%;
 }

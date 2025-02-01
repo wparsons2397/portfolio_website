@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "extract": "formatjs extract 'src/**/*.js*' --out-file src/lang/en-US.json --ignore 'src/lang/**/*' --format simple",
-    "generate-summary": "node src/Portfolio/TestingContent/GenerateTestingSummary.js"
+    "capture-test-results": "node src/Portfolio/TestingContent/CaptureTestResults.js"
   },
   "eslintConfig": {
     "extends": [

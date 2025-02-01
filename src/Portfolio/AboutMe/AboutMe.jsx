@@ -3,7 +3,7 @@ import './AboutMe.css';
 import SimpleSquare from "../../CommonComponents/SimpleSquare/SimpleSquare";
 
 function AboutMe() {
-    return(
+    return (
         <div className="AboutMe">
             <h1>Will Parsons</h1>
             <p>Front-end developer</p>
@@ -15,7 +15,7 @@ function AboutMe() {
                 </div>
                 <div className="PictureColumnContainer">
                     <div className="PictureContent">
-                        <img className="RoundedImage" src={`Images/Headshot_1.png`} alt="Headshot_1" height="504px" width="378px"></img>
+                        <img className="RoundedImage" src={`Images/Headshot_1.png`} alt="Headshot_1" height="350px" width="300px"></img>
                     </div>
                 </div>
             </div>
@@ -49,10 +49,6 @@ function AboutMe() {
                 <SimpleSquare text="C#" pic="csharp"></SimpleSquare>
                 <SimpleSquare text="Java" pic="java"></SimpleSquare>
             </div>
-
-            <p>As a frontend developer, I have a lot of experience with JavaScript Packages across all parts of the ecosystem.</p>
-
-
         </div>
 
     )

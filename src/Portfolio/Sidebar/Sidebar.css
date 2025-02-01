@@ -5,17 +5,17 @@
     display: flex;
     flex-direction: column;
     flex: 3;
-    flex-basis: 10%; /* Adjusted width */
+    flex-basis: 10%;
     z-index: 1;
     position: sticky;
-    top: 2%; /* Revert to previous top value */
-    transform: translateY(0); /* Remove vertical centering */
-    height: 50vh; /* Responsive height, at most 50% of the browser height */
+    top: 2%;
+    transform: translateY(0);
+    height: 50vh;
     border-radius: 60px;
     overflow: hidden;
 
-    #backToTop{
-        background-color: var(--accent-one-color); 
+    #backToTop {
+        background-color: var(--accent-one-color);
         border: none;
         color: white;
         padding: 10px 32px;
@@ -25,16 +25,17 @@
         display: inline-block;
         font-size: calc(10px + 2vmin);
         border-radius: 50px;
-        transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+        transition: background-color 0.3s ease;
     }
-    #backToTop:hover{
+
+    #backToTop:hover {
         text-decoration: none;
 
         color: white;
-        background-color: var(--accent-one-hover-color); 
+        background-color: var(--accent-one-hover-color);
     }
 
-    a{
+    a {
         text-decoration: none;
         color: white;
         padding: 10px 32px;
@@ -42,11 +43,12 @@
         text-align: center;
         display: inline-block;
         font-size: calc(10px + 2vmin);
-        transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+        transition: background-color 0.3s ease;
         border-radius: 50px;
-        background-color: var(--accent-one-color); 
+        background-color: var(--accent-one-color);
     }
-    a:hover{
+
+    a:hover {
         text-decoration: none;
         color: white;
         background-color: var(--accent-one-hover-color);

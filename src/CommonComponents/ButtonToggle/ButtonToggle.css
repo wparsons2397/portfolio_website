@@ -1,0 +1,15 @@
+@import '../../constants/colors.css';
+
+.ButtonToggle {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ButtonToggle:hover {
+    background-color: var(--accent-one-color);
+}

@@ -46,14 +46,4 @@ describe('App', () => {
     expect(codersLogPageElement).toBeInTheDocument();
   });
 
-  // test('renders 404 page for unknown route', async () => {
-  //   render(
-  //     <MemoryRouter initialEntries={['/unknown']}>
-  //       <App />
-  //     </MemoryRouter>
-  //   );
-
-  //   const notFoundPageElement = await screen.findByText(/404 Not Found/i);
-  //   expect(notFoundPageElement).toBeInTheDocument();
-  // });
 });

@@ -1,9 +1,9 @@
 import React from "react";
 import './Spacer.css';
 
-function Spacer({spacer, color="black"}) {
+function Spacer({ spacer, color = "black" }) {
     return (
-        <div className="Spacer" style={{height:spacer, backgroundColor: color}}/>
+        <div className="Spacer" style={{ height: spacer, backgroundColor: color }} />
     )
 }
 

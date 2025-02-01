@@ -3,7 +3,7 @@
 TODOS:
 ---- [ ] V1 Deployment
 - [ ] Create readme to describe purpose
-- [ ] Flesh out Portfolio page
+- [X] Flesh out Portfolio page
 - [X] Third item to highlight within the portfolio? 2 doesnt feel like enough.
 - [X] Fix website color palatte
 - [ ] Ask Isabel for edits for any and all text

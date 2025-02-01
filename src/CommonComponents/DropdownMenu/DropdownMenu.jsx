@@ -1,28 +1,26 @@
 import React, { useState } from "react";
 import './DropdownMenu.css';
 
-function DropdownMenu({options, languageChange}) {
+function DropdownMenu({ options, languageChange }) {
     const [selectedValue, setSelectedValue] = useState('');
 
     let displayOptions;
-    if(Array.isArray(options) && options.length)
-    {
+    if (Array.isArray(options) && options.length) {
         displayOptions = options;
     }
-    else
-    {
+    else {
         displayOptions = [
             { value: 'Option 1', label: 'Option 1' },
             { value: 'Option 2', label: 'Option 2' },
             { value: 'Option 3', label: 'Option 3' },
-            ];
+        ];
     }
 
     return (
         <select
             className="DropdownMenu"
             value={selectedValue}
-            onChange={(e) => { 
+            onChange={(e) => {
                 setSelectedValue(e.target.value);
                 languageChange(e.target.value);
             }}
@@ -37,6 +35,6 @@ function DropdownMenu({options, languageChange}) {
         </select>
     );
 }
-    
+
 
 export default DropdownMenu;
