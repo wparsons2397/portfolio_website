@@ -17,12 +17,16 @@ function NavBar() {
     const navigateCodersLog = () => {
         navigate('/coderslog');
     }
+    const navigateComponentLibrary = () => {
+        navigate('/componentlibrary');
+    }
 
     return (
         <div className="NavBar">
             <button onClick={(navigatePortfolio)}> Portfolio </button>
-            <button onClick={(navigateJournal)}> Journal of an Expat </button>
-            <button onClick={(navigateCodersLog)}> Coder's Log </button>
+            {/* <button onClick={(navigateJournal)}> Journal of an Expat </button>
+            <button onClick={(navigateCodersLog)}> Coder's Log </button> */}
+            <button onClick={(navigateComponentLibrary)}> Component Library </button>
         </div>
     );
 }

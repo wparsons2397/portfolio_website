@@ -36,7 +36,7 @@ function Sidebar() {
             <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <a id="L1" href="https://www.linkedin.com/in/william-parsons-23ct/">LinkedIn</a>
             <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
-            <a id="L2" href="https://www.linkedin.com/in/william-parsons-23ct/">Resume Link WIP </a>
+            <a id="L2" href="https://drive.google.com/file/d/1ycqNjCmiIFwLcodPwZJQTp3MEgMoYDFw/view?usp=sharing">Resume Link</a>
             <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />
             <a id="L3" href="https://github.com/wparsons2397/portfolio_website">GitHub</a>
             <Spacer spacer={spacerHeight} color={Colors.ACCENTONE} />

@@ -4,7 +4,8 @@
     padding: 3% 5%;
     z-index: 0;
     border-radius: 60px;
-    text-align: initial; /* Override inherited text-align */
+    text-align: initial;
+    /* Override inherited text-align */
 }
 
 .HeaderSection {
@@ -12,12 +13,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
+}
+
+.ContentSectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
 }
 
 .ContentSection {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.ContentExplanationSection {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -30,4 +45,97 @@
 .LeftColumn p,
 .RightColumn p {
     margin-bottom: 10px;
+}
+
+.ContentOrganizer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.Tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-decoration: none;
+    color: white;
+    padding: 10px 32px;
+    margin: 1%;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    background-color: var(--accent-one-color);
+}
+
+.TabButton {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: calc(10px + 1vmin);
+    border: none;
+    border: 2px solid transparent;
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.TabButton.active {
+    border: 2px solid var(--tab-selected-color);
+    border-radius: 25px;
+    color: var(--text-on-light-color);
+    font-weight: bold;
+}
+
+.CustomTranslateButton {
+    margin: auto;
+    width: 20%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--accent-one-color);
+    transition: background-color 0.3s ease;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    border-radius: 4px;
+    height: 60px;
+    background-color: white;
+}
+
+.TranslationExplanation.expanded {
+    display: block;
+    transition: max-height 0.3s ease-in-out;
+    overflow: visible;
+}
+
+.TranslationExplanation.collapsed {
+    display: none;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.ButtonToggle {
+    background-color: var(--accent-one-color)!important;
+    border: none;
+    border-radius: 25px;
+    color: var(--text-on-light-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: calc(10px + 1vmin);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Icon{
+    margin-top: 3.5%;
 }

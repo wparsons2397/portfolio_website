@@ -6,7 +6,7 @@ function AboutMe() {
     return (
         <div className="AboutMe">
             <h1>Will Parsons</h1>
-            <p>Front-end developer</p>
+            <p>Full Stack Developer</p>
             <div className="DualContent">
                 <div className="TextColumn">
                     <p>I'm a full stack software engineer with 5 years of experience. Recently, I had the chance to follow my heart and I moved (with my parter and our 2 cats) to London!</p>

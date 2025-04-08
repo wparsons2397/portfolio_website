@@ -16,6 +16,9 @@ function ContentContainer({ contentDisplay, color }) {
             {contentDisplay === 'Testing' &&
                 <TestingContent color={color} />
             }
+            {contentDisplay === 'Display' &&
+                <div className="Demo" style={{backgroundColor: color}}>Display</div>
+            }
         </div>
     )
 }

@@ -21,9 +21,9 @@ function MainPage() {
           <Spacer spacer={spacerHeight} color={Colors.BACKGROUND} />
           <ContentHeader text="Key Projects" />
           <Spacer spacer={spacerHeight} color={Colors.BACKGROUND} />
-          <ContentContainer contentDisplay='Accessibility' color={Colors.PRIMARY} />
-          <Spacer spacer={spacerHeight} color={Colors.BACKGROUND} />
           <ContentContainer contentDisplay='Translations' color={Colors.PRIMARY} />
+          <Spacer spacer={spacerHeight} color={Colors.BACKGROUND} />
+          <ContentContainer contentDisplay='Accessibility' color={Colors.PRIMARY} />
           <Spacer spacer={spacerHeight} color={Colors.BACKGROUND} />
           <ContentContainer contentDisplay='Testing' color={Colors.PRIMARY} />
         </div>

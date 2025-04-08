@@ -1,5 +1,7 @@
+@import '../../constants/colors.css';
 .ContentContainer {
     position: relative;
     flex: 1;
     z-index: 0;
+
 }
