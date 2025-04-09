@@ -12,8 +12,8 @@ import ButtonToggle from "../../CommonComponents/ButtonToggle/ButtonToggle";
 import Icon from "../../CommonComponents/Icon/Icon.jsx";
 
 const baseObj = {
-    text_1: 'Today it is Monday and the weather outside is cold and wet',
-    text_2: 'I am a software engineer',
+    text_1: 'Today is Thursday',
+    text_2: 'This is a rare occassion where it is not raining in London',
     text_3: 'This is both frontend and backend solution',
     text_4: 'This uses Python & Flask to leverage Google Translate.'
 };
@@ -292,8 +292,8 @@ function TranslationContent({ color }) {
                             </div>
                             <div className="ContentExplanationSection">
                                 <div> When implementing this translation system, there are 2 backend implementations I toyed with.</div>
-                                <div> One being a streamlined appraoch utilizing googletrans python library. </div>
-                                <div> The other being the enterprise solution that I have implemented in Ruby before, which uses the official Google Translate API librarydirectly.</div>
+                                <div> One being a streamlined appraoch utilizing googletrans Python library. </div>
+                                <div> The other being the enterprise solution that I have implemented in Ruby before, which uses the official Google Translate API library directly.</div>
                                 <div> I felt that it was important to do a "Designing the Implementation" type breakdown as to how I would turn this first, streamlined implementation into an "enterprise & scalable" solution using Google Translate API directly.</div>
                                 <div className="ContentSection">
                                     <div className="LeftColumn">
@@ -304,7 +304,7 @@ function TranslationContent({ color }) {
                                     </div>
                                     <VerticalSeparator color={Colors.ACCENTTWO} />
                                     <div className="RightColumn">
-                                        <p>Google Translate API Library Implementation</p>
+                                        <p>A Future Google Translate API Library Implementation</p>
                                         <p>Security - Proper authentication via Google Cloud, in API authentication to prevent malicious users, and hesitance to rely on a 3rd party library (with an MIT license) make the 1st party Google Translate API vastly superior for enterprise use.</p>
                                         <p>Scalability - With a character limit of 15,000 per translation, and potential IP block by Google for overuse (Over 1000 requests/hour), this is not a scaleable solution. The 1st party Google Translate API handles scale at cost, which would be necessary for enterprise use.</p>
                                         <p>Reliability - With Google Translate API, you are getitng the reliability of Google & its services, dramatically reducing the chance for outages, issues, and API rate limits</p>
