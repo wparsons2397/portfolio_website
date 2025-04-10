@@ -2,7 +2,7 @@
   "headerText": "Translation Content",
   "dropdown": "Dropdown Language",
   "paragraphOne": "So many websites are designed by English speakers for English speakers.",
-  "paragraphTwo": "The work to add translatable content is rather straightforward.",
-  "paragraphThree": "Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.",
-  "paragraphFour": "The internet is a powerful tool meant for all, and translations are important to providing access to all."
+  "paragraphTwo": "Just because some browsers can automatically translate a website does not mean content is accessible for all.",
+  "paragraphThree": "Developers still need to consider their audiences and the devices they use to maximize their reach, as not all browsers have this capability. ",
+  "paragraphFour": "The internet is a powerful tool, and translations are important to providing access to all."
 }

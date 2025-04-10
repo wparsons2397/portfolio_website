@@ -12,9 +12,9 @@ import ButtonToggle from "../../CommonComponents/ButtonToggle/ButtonToggle";
 import Icon from "../../CommonComponents/Icon/Icon.jsx";
 
 const baseObj = {
-    text_1: 'Today is Thursday',
-    text_2: 'This is a rare occassion where it is not raining in London',
-    text_3: 'This is both frontend and backend solution',
+    text_1: 'Today is Thursday, April the tenth.',
+    text_2: 'This is a rare occassion where it is not raining in London. I love seeing the sun so it is nice to have sunshine',
+    text_3: 'This is both frontend and backend solution.',
     text_4: 'This uses Python & Flask to leverage Google Translate.'
 };
 
@@ -207,9 +207,9 @@ function TranslationContent({ color }) {
                         <div className="ContentSection">
                             <div className="LeftColumn">
                                 <p>So many websites are designed by English speakers for English speakers.</p>
-                                <p>The work to add translatable content is rather straightforward.</p>
-                                <p>Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.</p>
-                                <p>The internet is a powerful tool meant for all, and translations are important to providing access to all.</p>
+                                <p>Just because some browsers can automatically translate a website does not mean content is accessible for all.</p>
+                                <p>Developers still need to consider their audiences and the devices they use to maximize their reach, as not all browsers have this capability. </p>
+                                <p>The internet is a powerful tool, and translations are important to providing access to all.</p>
                             </div>
                             <VerticalSeparator color={Colors.ACCENTTWO} />
                             <div className="RightColumn" dir={getDirection(locale)}>
@@ -237,10 +237,10 @@ function TranslationContent({ color }) {
                         </div>
                         <div className="ContentSection">
                             <div className="LeftColumn">
-                                <p>So many websites are designed by English speakers for English speakers</p>
-                                <p>But the work to add translatable content is rather straightforward.</p>
-                                <p>Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.</p>
-                                <p>The internet is a powerful tool meant for all, and translations are important to providing access to all.</p>
+                                <p>So many websites are designed by English speakers for English speakers.</p>
+                                <p>Just because some browsers can automatically translate a website does not mean content is accessible for all.</p>
+                                <p>Developers still need to consider their audiences and the devices they use to maximize their reach, as not all browsers have this capability. </p>
+                                <p>The internet is a powerful tool, and translations are important to providing access to all.</p>
                             </div>
                             <VerticalSeparator color={Colors.ACCENTTWO} />
                             <div className="RightColumn" dir={getDirection(locale)}>
@@ -288,26 +288,25 @@ function TranslationContent({ color }) {
                             className={`TranslationExplanation ${expandedSections["TranslationExplanation"] ? "expanded" : "collapsed"}`}
                         >
                             <div className="ContentSectionHeader">
-                                Overview
+                                Designing the Implementation
                             </div>
                             <div className="ContentExplanationSection">
-                                <div> When implementing this translation system, there are 2 backend implementations I toyed with.</div>
-                                <div> One being a streamlined appraoch utilizing googletrans Python library. </div>
-                                <div> The other being the enterprise solution that I have implemented in Ruby before, which uses the official Google Translate API library directly.</div>
-                                <div> I felt that it was important to do a "Designing the Implementation" type breakdown as to how I would turn this first, streamlined implementation into an "enterprise & scalable" solution using Google Translate API directly.</div>
+                                <p> When implementing this translation system, I experimented with two backend approaches.</p>
+                                <p>One being a streamlined approach utilizing the googletrans Python library. The other being an enterprise solution (previously implemented in Ruby), which uses the official Google Translate API library directly.</p>
+                                <p> Below, I have outlined the strengths of each approach. The first (left), being what I have done and why, and the second (right) breaking down how I would turn the backend translation implementation into a scalable enterprise solution. </p>
                                 <div className="ContentSection">
                                     <div className="LeftColumn">
-                                        <p>Googletrans Library Implementation</p>
-                                        <p>Convenience - This is a personal project with zero intention of ever being used for enterprise purposes. A simple python library that handles the Google Translate API work is more straightforward and practical. This cannot be used for a production purpose given rate limits, lack of authentication, and reliance on a 3rd party library.</p>
-                                        <p>Cost - I prefer to find a low/no cost option for a service such as Google Translate API as a permanent solution for my needs. This is a limitation of my personal project. </p>
-                                        <p>Development Speed - The googletrans Library is lightweight and offers precisely what I need it to do - accept strings, locale, and return translated text - with no extra complications or heavy workflows to setup.</p>
+                                        <p>Why I used Googletrans Library Implementation:</p>
+                                        <p><b>Convenience</b> - This is a personal project with zero intention of ever being used for enterprise purposes. A simple python library that handles the Google Translate API work is more straightforward and practical. This cannot be used for a production purpose given rate limits, lack of authentication, and reliance on a 3rd party library.</p>
+                                        <p><b>Cost</b> - I prefer to find a low/no cost option for a service such as Google Translate API as a permanent solution for my needs. This is a limitation of my personal project. </p>
+                                        <p><b>Development Speed</b> - The googletrans Library is lightweight and offers precisely what I need it to do - accept strings, locale, and return translated text - with no extra complications or heavy workflows to setup.</p>
                                     </div>
                                     <VerticalSeparator color={Colors.ACCENTTWO} />
                                     <div className="RightColumn">
-                                        <p>A Future Google Translate API Library Implementation</p>
-                                        <p>Security - Proper authentication via Google Cloud, in API authentication to prevent malicious users, and hesitance to rely on a 3rd party library (with an MIT license) make the 1st party Google Translate API vastly superior for enterprise use.</p>
-                                        <p>Scalability - With a character limit of 15,000 per translation, and potential IP block by Google for overuse (Over 1000 requests/hour), this is not a scaleable solution. The 1st party Google Translate API handles scale at cost, which would be necessary for enterprise use.</p>
-                                        <p>Reliability - With Google Translate API, you are getitng the reliability of Google & its services, dramatically reducing the chance for outages, issues, and API rate limits</p>
+                                        <p>A Future Google Translate API Library Implementation:</p>
+                                        <p><b>Security</b> - Proper authentication via Google Cloud, in API authentication to prevent malicious users, and hesitance to rely on a 3rd party library (with an MIT license) make the 1st party Google Translate API vastly superior for enterprise use.</p>
+                                        <p><b>Scalability</b> - With a character limit of 15,000 per translation, and potential IP block by Google for overuse (Over 1000 requests/hour), this is not a scaleable solution. The 1st party Google Translate API handles scale at cost, which would be necessary for enterprise use.</p>
+                                        <p><b>Reliability</b> - With Google Translate API, you are getitng the reliability of Google & its services, dramatically reducing the chance for outages, issues, and API rate limits. </p>
                                     </div>
                                 </div>
                             </div>

@@ -37,15 +37,15 @@ describe('TranslationContent', () => {
 
         // Check for paragraphs in the left column
         expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[0]).toBeInTheDocument();
-        expect(screen.getAllByText('The work to add translatable content is rather straightforward.')[0]).toBeInTheDocument();
-        expect(screen.getAllByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')[0]).toBeInTheDocument();
-        expect(screen.getAllByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('Just because some browsers can automatically translate a website does not mean content is accessible for all.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('Developers still need to consider their audiences and the devices they use to maximize their reach, as not all browsers have this capability.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('The internet is a powerful tool, and translations are important to providing access to all.')[0]).toBeInTheDocument();
 
         // Check for paragraphs in the right column
         expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[1]).toBeInTheDocument();
-        expect(screen.getAllByText('The work to add translatable content is rather straightforward.')[1]).toBeInTheDocument();
-        expect(screen.getAllByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')[1]).toBeInTheDocument();
-        expect(screen.getAllByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('Just because some browsers can automatically translate a website does not mean content is accessible for all.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('Developers still need to consider their audiences and the devices they use to maximize their reach, as not all browsers have this capability.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('The internet is a powerful tool, and translations are important to providing access to all.')[1]).toBeInTheDocument();
 
         // Check for DropdownMenu component
         const dropdown = screen.getByRole('combobox');

@@ -9,9 +9,8 @@ function AboutMe() {
             <p>Full Stack Developer</p>
             <div className="DualContent">
                 <div className="TextColumn">
-                    <p>I'm a full stack software engineer with 5 years of experience. Recently, I had the chance to follow my heart and I moved (with my parter and our 2 cats) to London!</p>
-                    <p>A bit about me... I recently relocated from Chicago to London. Currently here in London on a visa which has already granted me the right to rent and right to work. </p>
-                    <p>I specialize in creating innovative solutions that drive positive change for communities and end users, blending technical expertise with a passion for social good. I am always hungry to learn more and grow in new directions that enable me to grow. My experience spans large companies, including Fortune 500 firms, as well as non-profit organizations, demonstrating my adaptability and commitment to impactful work.</p>
+                    <p>I'm a full stack software engineer with 5+ years of experience. Six months ago, I followed my heart and moved (with my parter and our 2 cats) from Chicago to London! My visa grants me the right to rent and right to work.</p>
+                    <p>I specialize in creating innovative solutions that drive positive change for communities and end users, blending technical expertise with a passion for social good. I am  hungry to learn more and grow in new directions. My experience spans large Fortune 500 companies to non-profit organizations, demonstrating my adaptability and commitment to impactful work.</p>
                 </div>
                 <div className="PictureColumnContainer">
                     <div className="PictureContent">
@@ -19,7 +18,7 @@ function AboutMe() {
                     </div>
                 </div>
             </div>
-            <p>As a programmer, I've learned quite a few languages and tools over the years that have all combined to make me the developer that I am</p>
+            <p>As a programmer, I've learned quite a few languages and tools over the years that have made me the developer that I am:</p>
             <div className="SquareHolderL">
                 <SimpleSquare text="React" pic="react"></SimpleSquare>
                 <SimpleSquare text="JavaScript" pic="javascript"></SimpleSquare>
