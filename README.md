@@ -1,5 +1,17 @@
 ## PORTFOLIO WEBSITE FOR WILL
 
+Node version: 17.9.1 used
+
+## Instructions to run
+
+npm i
+npm start
+
+## Tests
+
+npm run test
+
+
 TODOS:
 ---- [X] V1 Launch
 - [X] Create readme to describe purpose
