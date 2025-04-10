@@ -14,8 +14,8 @@ import Icon from "../../CommonComponents/Icon/Icon.jsx";
 const baseObj = {
     text_1: 'Today is Thursday, April the tenth.',
     text_2: 'This is a rare occassion where it is not raining in London. I love seeing the sun so it is nice to have sunshine',
-    text_3: 'This is both frontend and backend solution.',
-    text_4: 'This uses Python & Flask to leverage Google Translate.'
+    text_3: 'This is both frontend and backend solution that uses Python to leverage Google Translate.',
+    text_4: 'Full stack software development is like solving a puzzle, and the end solution is a complete, harmonious picture.',
 };
 
 function TranslationContent({ color }) {
