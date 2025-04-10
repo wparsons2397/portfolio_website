@@ -16,8 +16,9 @@ describe('NavBar', () => {
     test('renders', () => {
         renderNavBar();
         expect(screen.getByText('Portfolio')).toBeInTheDocument();
-        expect(screen.getByText('Journal of an Expat')).toBeInTheDocument();
-        expect(screen.getByText("Coder's Log")).toBeInTheDocument();
+        // expect(screen.getByText('Journal of an Expat')).toBeInTheDocument();
+        // expect(screen.getByText("Coder's Log")).toBeInTheDocument();
+        expect(screen.getByText("Component Library")).toBeInTheDocument();
     });
 
     test('navigates to Portfolio', () => {
@@ -26,15 +27,21 @@ describe('NavBar', () => {
         expect(window.location.pathname).toBe('/');
     });
 
-    test('navigates to journal', () => {
-        renderNavBar();
-        fireEvent.click(screen.getByText('Journal of an Expat'));
-        expect(window.location.pathname).toBe('/journal');
-    });
+    // test('navigates to journal', () => {
+    //     renderNavBar();
+    //     fireEvent.click(screen.getByText('Journal of an Expat'));
+    //     expect(window.location.pathname).toBe('/journal');
+    // });
 
-    test('navigate to Log', () => {
+    // test('navigate to Log', () => {
+    //     renderNavBar();
+    //     fireEvent.click(screen.getByText("Coder's Log"));
+    //     expect(window.location.pathname).toBe('/coderslog');
+    // });
+
+    test('navigates to Component Library', () => {
         renderNavBar();
-        fireEvent.click(screen.getByText("Coder's Log"));
-        expect(window.location.pathname).toBe('/coderslog');
+        fireEvent.click(screen.getByText('Component Library'));
+        expect(window.location.pathname).toBe('/componentlibrary');
     });
 });

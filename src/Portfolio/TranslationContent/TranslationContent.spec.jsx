@@ -36,15 +36,16 @@ describe('TranslationContent', () => {
         expect(screen.getByLabelText('Translation Content Section')).toBeInTheDocument();
 
         // Check for paragraphs in the left column
-        expect(screen.getByText('So many websites are design by English speakers for English speakers')).toBeInTheDocument();
-        expect(screen.getByText('But the work to add translatable content is rather straightforward.')).toBeInTheDocument();
-        expect(screen.getByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')).toBeInTheDocument();
-        expect(screen.getByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')).toBeInTheDocument();
+        expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('The work to add translatable content is rather straightforward.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')[0]).toBeInTheDocument();
+        expect(screen.getAllByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')[0]).toBeInTheDocument();
 
         // Check for paragraphs in the right column
-        expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
-        expect(screen.getByText('All of it will translate when you change the dropdown')).toBeInTheDocument();
-        expect(screen.getByText('I believe that the internet is meant for everyone, an important part of that is by striving to make webpage content in as many languages as possible!')).toBeInTheDocument();
+        expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('The work to add translatable content is rather straightforward.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('Though some browsers can translate a website, that is no excuse for developers to be more considerate of their audiences.')[1]).toBeInTheDocument();
+        expect(screen.getAllByText('The internet is a powerful tool meant for all, and translations are important to providing access to all.')[1]).toBeInTheDocument();
 
         // Check for DropdownMenu component
         const dropdown = screen.getByRole('combobox');
@@ -77,7 +78,7 @@ describe('TranslationContent', () => {
         fireEvent.change(dropdown, { target: { value: 'es' } });
 
         // Check that the locale is updated
-        expect(screen.getByText('En esta sección hay un montón de texto variado.')).toBeInTheDocument();
+        expect(screen.getByText('Hay muchos sitios web diseñados por angloparlantes para angloparlantes.')).toBeInTheDocument();
     });
 
     test('changes the language to Arabic and confirms the locale and direction', () => {
@@ -89,7 +90,7 @@ describe('TranslationContent', () => {
         fireEvent.change(dropdown, { target: { value: 'ar' } });
 
         // Check that the locale is updated
-        expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
+        expect(screen.getByText('تم تصميم العديد من المواقع الإلكترونية بواسطة متحدثين باللغة الإنجليزية للمتحدثين باللغة الإنجليزية.')).toBeInTheDocument();
 
         // Find the element with the class 'RightColumn'
         const translationContentDiv = container.querySelector('.RightColumn');
@@ -105,7 +106,7 @@ describe('TranslationContent', () => {
         fireEvent.change(dropdown, { target: { value: 'ar' } });
 
         // Check that the locale is updated
-        expect(screen.getByText('يوجد في هذا القسم مجموعة من النصوص المتنوعة.')).toBeInTheDocument();
+        expect(screen.getByText('تم تصميم العديد من المواقع الإلكترونية بواسطة متحدثين باللغة الإنجليزية للمتحدثين باللغة الإنجليزية.')).toBeInTheDocument();
 
         // Find the element with the class 'RightColumn'
         const translationContentDiv = container.querySelector('.RightColumn');
@@ -114,7 +115,7 @@ describe('TranslationContent', () => {
         fireEvent.change(dropdown, { target: { value: 'nl' } });
 
         // Check that the locale is updated
-        expect(screen.getByText('In deze sectie vindt u een heleboel verschillende teksten.')).toBeInTheDocument();
+        expect(screen.getByText('Er zijn zoveel websites ontworpen door Engelstaligen, voor Engelstaligen.')).toBeInTheDocument();
 
         // Check that the direction is now left to right
         expect(translationContentDiv).toHaveAttribute('dir', 'ltr');
@@ -126,30 +127,30 @@ describe('TranslationContent', () => {
         const dropdown = screen.getByRole('combobox');
 
         const translations = {
-            'en': 'In this section there is a bunch of various text.',
-            'es': 'En esta sección hay un montón de texto variado.',
-            'nl': 'In deze sectie vindt u een heleboel verschillende teksten.',
-            'uk': 'У цьому розділі є купа різноманітного тексту.',
-            'ja': 'このセクションにはさまざまなテキストがたくさんあります。',
-            'ar': 'يوجد في هذا القسم مجموعة من النصوص المتنوعة.'
+            'en': 'So many websites are designed by English speakers for English speakers.',
+            'es': 'Hay muchos sitios web diseñados por angloparlantes para angloparlantes.',
+            'nl': 'Er zijn zoveel websites ontworpen door Engelstaligen, voor Engelstaligen.',
+            'uk': 'Так багато веб-сайтів розроблено англомовними для англомовних.',
+            'ja': '多くのウェブサイトは英語話者によって英語話者向けに設計されています。',
+            'ar': 'تم تصميم العديد من المواقع الإلكترونية بواسطة متحدثين باللغة الإنجليزية للمتحدثين باللغة الإنجليزية.'
         };
 
         Object.keys(translations).forEach(locale => {
             fireEvent.change(dropdown, { target: { value: locale } });
-            expect(screen.getByText(translations[locale])).toBeInTheDocument();
+            expect(screen.getAllByText(translations[locale])[0]).toBeInTheDocument();
         });
     });
 
     test('renders with default language', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
-        expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
+        expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[0]).toBeInTheDocument();
     });
 
     test('handles invalid language code gracefully', () => {
         renderWithIntl(<TranslationContent color="#FFFFFF" />);
         const dropdown = screen.getByRole('combobox');
         fireEvent.change(dropdown, { target: { value: 'invalid-code' } });
-        expect(screen.getByText('In this section there is a bunch of various text.')).toBeInTheDocument();
+        expect(screen.getAllByText('So many websites are designed by English speakers for English speakers.')[0]).toBeInTheDocument();
     });
 
     test('is accessible', () => {

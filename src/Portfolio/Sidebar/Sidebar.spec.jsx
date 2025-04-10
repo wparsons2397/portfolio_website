@@ -22,11 +22,11 @@ describe('Sidebar Component', () => {
 
     test('links are valid', () => {
         const linkedinLink = screen.getByText(/LinkedIn/i).closest('a');
-        const resumeLink = screen.getByText(/Resume Link WIP/i).closest('a');
+        const resumeLink = screen.getByText(/Resume Link/i).closest('a');
         const githubLink = screen.getByText(/GitHub/i).closest('a');
 
         expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/william-parsons-23ct/');
-        expect(resumeLink).toHaveAttribute('href', 'https://www.linkedin.com/in/william-parsons-23ct/');
+        expect(resumeLink).toHaveAttribute('href', 'https://drive.google.com/file/d/1ycqNjCmiIFwLcodPwZJQTp3MEgMoYDFw/view?usp=sharing');
         expect(githubLink).toHaveAttribute('href', 'https://github.com/wparsons2397/portfolio_website');
     });
 

@@ -1,18 +1,20 @@
 ## PORTFOLIO WEBSITE FOR WILL
 
 TODOS:
----- [ ] V1 Deployment
-- [ ] Create readme to describe purpose
+---- [X] V1 Launch
+- [X] Create readme to describe purpose
 - [X] Flesh out Portfolio page
 - [X] Third item to highlight within the portfolio? 2 doesnt feel like enough.
 - [X] Fix website color palatte
-- [ ] Ask Isabel for edits for any and all text
+- [X] Ask Isabel for edits for any and all text
 - [X] Add unit tests
 ---- [ ] V2 Deployment
 - [ ] Host this elsewhere than standard Github Pages
-    - [ ] Host with website and GHA?
+    - [ ] Host with website
+    - [ ] GHA for deployment on push to master
 - [ ] Get Coder's Log up and running
 ---- [ ] V3 Deployment
+- [ ] Convert to MUI? Implement at page with MUI?
 - [ ] Start journal section
 
 DESIGN PRINCIPLES

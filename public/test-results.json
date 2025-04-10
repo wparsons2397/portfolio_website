@@ -1,35 +1,7 @@
 [
   {
-    "name": "Display Test Results",
-    "tests": 6,
-    "failures": 1,
-    "errors": 0,
-    "skipped": 0
-  },
-  {
-    "name": "Translation Content",
-    "tests": 9,
-    "failures": 0,
-    "errors": 0,
-    "skipped": 0
-  },
-  {
-    "name": "App",
-    "tests": 3,
-    "failures": 0,
-    "errors": 0,
-    "skipped": 0
-  },
-  {
-    "name": "Accessibility Content",
-    "tests": 7,
-    "failures": 0,
-    "errors": 0,
-    "skipped": 0
-  },
-  {
     "name": "Nav Bar",
-    "tests": 4,
+    "tests": 3,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -49,7 +21,35 @@
     "skipped": 0
   },
   {
+    "name": "Display Test Results",
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "name": "Accessibility Content",
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
     "name": "Intl Manager",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "name": "Translation Content",
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "name": "Dropdown Menu",
     "tests": 3,
     "failures": 0,
     "errors": 0,
@@ -63,7 +63,7 @@
     "skipped": 0
   },
   {
-    "name": "Dropdown Menu",
+    "name": "App",
     "tests": 3,
     "failures": 0,
     "errors": 0,
